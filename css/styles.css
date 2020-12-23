@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("/assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Helvetica Light";
+    src:  url("/assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
+}
+
+.home-menu-left {
+    font-family: "Helvetica Neue";
+    width: 34vw;
+    margin: .5vw 1vw .5vw 1vw;
+    padding: .5vw;
+    position: fixed;
+}
+
+.home-menu-left-top {
+    position: inherit;
+    top: 2vw;
+}
+
+#home-title {
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    font-size: 4.5vw;
+    color: black;
+    text-decoration: black;
+}
+
+#masthead {
+    margin-top: 2vw;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 1.2;
+    width: 26vw;
+}
+
+.home-menu-left-bottom {
+    position: inherit;
+    bottom: 2vw;
+    width: 34vw;
+}
+
+#sva-logo {
+    width: 200px;
+    display: inline-block;
+}
+
+#home-student-dropdown {
+    position: absolute;
+    bottom: 0vw;
+    right: 0vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+#home-student-dropdown-test {
+    text-decoration: none;
+    color: black;
+}
+
+.home-gallery-right {
+    width: 60vw;
+    height: 93vh;
+    position: fixed;
+    top: 2vw;
+    right: 1vw;
+    overflow-y: scroll;
+}
+
+.home-gallery-right-col1 {
+    width: 28vw;
+    position: absolute;
+    left: 0vw;
+    margin: 1.5vw;
+    
+}
+
+.home-gallery-img{
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+
+.home-gallery-right-col2 {
+    width: 28vw;
+    position: absolute;
+    right: 0vw;
+    margin: 1.5vw;
+}
+
+.gallery-view-img-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 85vh;
+    width: 60vw;
+}
+
+.gallery-view-img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+.gallery-view-col{
+    width: 15vw;
+    height: 85vh;
+    display: inline-block;
+}
+
+.gallery-view-col-left{
+    position: absolute;
+    left: 4vw;
+}
+
+.gallery-view-col-right{
+    position: absolute;
+    right: 4vw;
+}
+
+.gallery-view-arrow-button {
+    width: 5vh;
+}
+
+.gallery-view-arrow-button-left {
+    position: inherit;
+    left: 0;
+    top: 38vh;
+}
+
+.gallery-view-arrow-button-right {
+    position: inherit;
+    right: 0vw;
+    top: 38vh;
+}
+
+.gallery-view-home-button {
+    width: 4vw;
+    position: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.gallery-view-piece-description {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 2vh;
+    position: absolute;
+    bottom: 0vh;
+    right: 0vh;
+}
+
+.profile-menu-left {
+    font-family: "Helvetica Neue";
+    width: 34vw;
+    margin: .5vw 1vw .5vw 1vw;
+    padding: .5vw;
+    position: fixed;
+}
+
+.profile-menu-left-top {
+    position: inherit;
+    top: 2vw;
+    width: 34vw;
+}
+
+#profile-title {
+    font-family: "Helvetica Neue";
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    
+}
+
+#profile-name {
+    font-family: "Helvetica";
+    font-weight: 300;
+    font-size: 3.2vw;
+    color: black;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+
+.profile-menu-left-middle{
+    position: inherit;
+    top: 25vh;
+    width: 34vw;
+    height: 55vh;
+}
+
+#profile-photo{
+    width: 18vw;
+    display: inline-block;
+}
+
+.profile-info-button{
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 4vw;
+    position: absolute;
+    bottom: 0vh;
+    margin: 0;
+}
+
+.profile-menu-left-bottom {
+    position: inherit;
+    bottom: 2vw;
+    width: 34vw;
+}
+
+#profile-writing-button {
+    width: 5vw;
+}
+
+#profile-student-dropdown {
+    position: absolute;
+    bottom: 0vw;
+    right: 0vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+#profile-student-dropdown-test {
+    text-decoration: none;
+    color: black;
+}
