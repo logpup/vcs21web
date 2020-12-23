@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Helvetica Neue";
-    src: url("/assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
     font-weight: medium;
 }
 
 @font-face {
     font-family: "Helvetica Light";
-    src:  url("/assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
+    src:  url("assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
 }
 
 .home-menu-left {
