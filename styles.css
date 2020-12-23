@@ -9,6 +9,31 @@
     src:  url("assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Cirka;
+    src: url("assets/fonts/Cirka-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url("assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url("assets/fonts/NeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueWorld;
+    src: url("assets/fonts/NeueWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hatton;
+    src: url("assets/fonts/Hatton-Medium.otf") format("opentype");
+}
+
 .home-menu-left {
     font-family: "Helvetica Neue";
     width: 34vw;
@@ -23,7 +48,7 @@
 }
 
 #home-title {
-    font-family: "Helvetica Neue";
+    font-family: MonumentExtended;
     font-weight: 700;
     font-size: 4.5vw;
     color: black;
@@ -32,10 +57,9 @@
 
 #masthead {
     margin-top: 2vw;
-    font-family: "Helvetica";
-    font-weight: 400;
-    font-size: 1.3vw;
-    line-height: 1.2;
+    font-family: "Neue-World";
+    font-size: 18px;
+    line-height: 26px;
     width: 26vw;
 }
 
