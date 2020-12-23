@@ -50,16 +50,16 @@
 #home-title {
     font-family: MonumentExtended;
     font-weight: 700;
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: black;
     text-decoration: black;
 }
 
 #masthead {
     margin-top: 2vw;
-    font-family: "Neue-Machina";
-    font-size: 18px;
-    line-height: 26px;
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    line-height: 22px;
     width: 26vw;
 }
 
