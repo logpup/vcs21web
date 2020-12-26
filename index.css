@@ -73,6 +73,8 @@
     width: 95%;
 }
 
+/* 3dream sprial */
+
 .home-title {
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -87,6 +89,13 @@
     color: white;
     text-decoration: none;
 }
+
+.home-title:hover{
+    background-color: hotpink;
+    color: blue;
+}
+
+/* VCS Seniors */
 
 .bottom-title {
     float: right;
@@ -124,7 +133,7 @@
 #mastbutton {
     float: right;
     margin: 10px 0px 0px 1vw;
-    padding: 10px 15px 10px 10px;
+    padding: 10px 10px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
     font-size: 13px;
