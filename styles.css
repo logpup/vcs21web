@@ -60,7 +60,7 @@
 
 .home-menu-left {
     position: absolute;
-    width: 34vw;
+    width: 25vw;
     height: 100vh;
 }
 
@@ -94,8 +94,8 @@
 }
 
 #mastbutton {
-    float:right;
-    margin: 5px;
+    float: right;
+    margin: 0px 0px 0px 1vw;
     padding: 10px 15px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
@@ -192,7 +192,7 @@ td h1{
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: 8vw;
+    width: 6vw;
 }
 
 #home-student-dropdown {
