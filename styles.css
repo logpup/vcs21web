@@ -84,8 +84,8 @@
 }
 
 #mastbutton {
-    position: absolute;
-    right: 10px;
+    float:right;
+    margin: 5px;
     padding: 10px 15px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
@@ -94,8 +94,8 @@
     letter-spacing: -.8px;
     text-align: center;
     border-style: solid;
-    border-width: thin 10px thin thin;
-    border-radius: 0px 10px 10px 0px;
+    border-width: thin thin 4px thin;
+    border-radius: 10px 0px 10px 0px;
     
 }
 
@@ -111,6 +111,7 @@
 
 td {
   border: 1px solid black;
+  border-width: thin thin 4px thin;
   border-radius: 10px;    
   padding: 4px 10px;   
 }
@@ -118,6 +119,15 @@ td {
     border: 0px;
     
 }
+
+/* Name Hover Color*/
+
+.nametable .name1 :hover{
+    background-color: red;
+    color: white;
+}
+
+
 
 .home-menu-left-bottom {
     float: left;
