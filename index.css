@@ -61,28 +61,56 @@
 
 .home-menu-left {
     float: left;
-    width: 30vw;
-    height: 100vh;
+    width: 28vw;
+    height: 90vmin;
+    z-index: 9999;
 }
 
 .home-menu-left-top {
-    position: absolute;
+    float: left;
     background-color: white;
-    padding: 15px 20px 10px 20px;
-    width: 28vw;
+    padding: 5px 5px 5px 10px;
+    width: 95%;
 }
 
-#home-title {
-    font-family: "Helvetica";
-    font-weight: 700;
-    font-size: 3.6vw;
-    color: black;
-    text-decoration: black;
+.home-title {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
 }
+
+.home-title h1{
+    font-family: "Helvetica";
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-title {
+    float: right;
+    margin-top: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-title h1{
+    font-family: "Helvetica";
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+/* title animation */
 
 #masthead {
     margin-top: 15px;
     padding: 10px 10px 10px 15px;
+    height: 25vh;
     font-family: "SupplyReg";
     font-size: 13px;
     line-height: 18px;    
@@ -90,11 +118,12 @@
     border-style: solid;
     border-width: thin thin thin 15px;
     border-radius: 15px 0px 0px 15px;
+    overflow-y: scroll
 }
 
 #mastbutton {
     float: right;
-    margin: 0px 0px 0px 1.5vw;
+    margin: 10px 0px 0px 1vw;
     padding: 10px 15px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
@@ -110,8 +139,14 @@
 
 .nametable{
     padding-top: 15px;
+    padding-bottom: 10px;
     width: 100%;
     text-align: center;
+    justify-content: center;
+}
+
+td{
+    width: 33%;
 }
 
 td h1{
@@ -123,7 +158,7 @@ td h1{
   border: 1px solid black;
   border-width: thin thin 4px thin;
   border-radius: 100px 100px 100px 100px;    
-  padding: 4px 10px;   
+  padding: 4px 5px;   
   text-decoration: none;
 }
 
