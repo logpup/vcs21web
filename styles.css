@@ -178,12 +178,12 @@ td h1{
 }
 
 .home-gallery-right {
-    float: right;
+    float: left;
     width: 70vw;
     height: 100vh;
     overflow-y: scroll;
     z-index: 1;
-    margin: 0px;
+    margin-left: 30px;
 }
 
 .home-gallery-right-col1 {
