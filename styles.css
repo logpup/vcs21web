@@ -66,13 +66,13 @@
 #home-title {
     font-family: Helvetica;
     font-weight: 700;
-    font-size: 4.8vw;
+    font-size: 4.5vw;
     color: black;
     text-decoration: black;
 }
 
 #masthead {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 10px 10px 15px;
     font-family: "SupplyReg";
     font-size: 13px;
@@ -100,7 +100,7 @@
 }
 
 .nametable{
-    padding-top: 10px;
+    padding-top: 15px;
     font-family: "SupplyReg";
     font-size: 13px;
     line-height: 18px;    
