@@ -46,15 +46,6 @@
     background-color:rgb(255, 238, 0);
 }
 
-.gallery-view-img-prev {
-}
-
-.gallery-view-img-curr {
-}
-
-.gallery-view-img-next {
-}
-
 /* SLIDE ANIMATION*/
 
 /* forwards */
@@ -64,22 +55,11 @@
     to {transform: translate(-125vw, 0vw);}
 }
 
-.gallery-view-img-container-prev.left {
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.gallery-view-img-container-curr.left {
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.gallery-view-img-container-next.left {
-    animation-name: left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.gallery-view-img-container.left {
+    -webkit-animation: left 1s forwards;
+    -moz-animation: left 1s forwards;
+    -o-animation: left 1s forwards;
+    animation: left 1s forwards;
 }
 
 /* backwards */
@@ -89,22 +69,11 @@
     to {transform: translate(150vw, 0vw);}
 }
 
-.gallery-view-img-container-curr.right {
-    animation-name: right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.gallery-view-img-container-prev.right {
-    animation-name: right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.gallery-view-img-container-next.right {
-    animation-name: right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.gallery-view-img-container.right {
+    -webkit-animation: right 1s forwards;
+    -moz-animation: right 1s forwards;
+    -o-animation: right 1s forwards;
+    animation: right 1s forwards;
 }
 
 /* L&R COLUMN DIVS */
