@@ -64,9 +64,9 @@
 }
 
 #home-title {
-    font-family: MonumentExtended;
+    font-family: Helvetica;
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 4.8vw;
     color: black;
     text-decoration: black;
 }
@@ -86,7 +86,7 @@
 #mastbutton {
     position: absolute;
     right: 10px;
-    padding: 10px 10px 10px 15px;
+    padding: 10px 15px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
     font-size: 13px;
