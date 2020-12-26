@@ -48,6 +48,11 @@
     src: url("assets/fonts/Supply-UltraLight.otf") format("opentype");
 }
 
+@font-face {
+    font-family: FormulaCond;
+    src: url("assets/fonts/FormulaCondensed-Bold.otf") format("opentype");
+}
+
 .home-menu-left {
     position: absolute;
     width: 34vw;
@@ -64,9 +69,9 @@
 }
 
 #home-title {
-    font-family: Helvetica;
+    font-family: "MonumentExtended";
     font-weight: 700;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: black;
     text-decoration: black;
 }
