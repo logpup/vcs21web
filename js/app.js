@@ -3,10 +3,16 @@ $(document).ready(function(){
     $("#home-title").mouseover(
         function() {
             $("#home-title").css("color", "blue");
-            $("#home-title").html("3Dream<br>Spiral_relax")
+            $("#home-title").css("font-family", "MajorMono");
+            $("#home-title").css("font-size", "3.6vw");
+            $("#home-title").css("line-height", "8vh");
+            $("#home-title").html("3DREAM<br>SPIRAL_RELAX")
         })
     .mouseout(function(){
         $("#home-title").css("color", "black");
+        $("#home-title").css("font-family", "Helvetica");
+        $("#home-title").css("font-size", "3.5vw");
+        $("#home-title").css("line-height", "8vh");
         $("#home-title").html("VCS '21<br>UDG SENIORS")
     })
 

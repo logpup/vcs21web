@@ -53,6 +53,11 @@
     src: url("assets/fonts/FormulaCondensed-Bold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: MajorMono;
+    src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
+}
+
 .home-menu-left {
     position: absolute;
     width: 34vw;
@@ -69,7 +74,7 @@
 }
 
 #home-title {
-    font-family: "MonumentExtended";
+    font-family: "Helvetica";
     font-weight: 700;
     font-size: 3.5vw;
     color: black;
