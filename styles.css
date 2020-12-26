@@ -111,20 +111,23 @@
 
 .nametable{
     padding-top: 15px;
-    font-family: "SupplyReg";
-    font-size: 13px;
-    line-height: 18px;    
-    letter-spacing: -.8px;
     width: 100%;
     text-align: center;
 }
 
-td {
+td h1{
+  color: black;
+  font-family: "SupplyReg";
+  font-size: 13px;
+  line-height: 18px;    
+  letter-spacing: -.8px;
   border: 1px solid black;
   border-width: thin thin 4px thin;
   border-radius: 10px;    
   padding: 4px 10px;   
+  text-decoration: none;
 }
+
 .blankname{
     border: 0px;
     
@@ -132,9 +135,46 @@ td {
 
 /* Name Hover Color*/
 
-.nametable .name1 :hover{
+.nametable .name1 h1:hover{
     background-color: red;
+    box-shadow: 0px 0px 20px rgba(250,0,0,0.8);
     color: white;
+}
+
+.nametable .name2 h1:hover{
+    background-color: darkorange;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(250,0,0,0.8);
+}
+
+.nametable .name3 h1:hover{
+    background-color: goldenrod;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(250,110,0,0.8);
+}
+
+.nametable .name4 h1:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0,250,0,0.8);
+}
+
+.nametable .name5 h1:hover{
+    background-color: darkblue;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(60,0,255,0.8);
+}
+
+.nametable .name6 h1:hover{
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(130,0,255,0.8);
+}
+
+.nametable .name7 h1:hover{
+    background-color: deeppink;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(220,0,255,0.8);
 }
 
 
