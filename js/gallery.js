@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("img").click(function(){
+    $(".gallery-view-arrow-button-right").click(function(){
       alert("The image was clicked.");
     });
   });
