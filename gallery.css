@@ -1,3 +1,7 @@
+* {
+    /* overflow: hidden; */
+}
+
 .gallery-view-img-container{
     display: block;
     margin-left: auto;
@@ -13,6 +17,18 @@
     width: auto;
     height: 100%;
     margin: auto;
+    z-index: 1;
+}
+
+.gallery-view-img-load-next {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    right: -100%;
+    height: 50%;
+    width: auto;
+    margin: auto;
+    z-index: 2;
 }
 
 .gallery-view-col{
