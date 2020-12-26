@@ -61,16 +61,16 @@
 
 .home-menu-left {
     float: left;
-    width: 26vw;
+    width: 28vw;
     height: 100vh;
+    margin-right: 20px;
    
 }
 
 .home-menu-left-top {
     position: absolute;
-    width: 100%;
     background-color: white;
-    padding: 15px 10px 10px 25px;
+    padding: 15px 0px 10px 20px;
 }
 
 #home-title {
@@ -178,11 +178,11 @@ td h1{
 }
 
 .home-gallery-right {
-    float: left;
-    width: 70vw;
+    position: absolute;
+    right: 0px;
+    width: 68vw;
     height: 100vh;
     overflow-y: scroll;
-    z-index: 1;
     margin-left: 30px;
 }
 
