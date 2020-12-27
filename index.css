@@ -99,17 +99,17 @@
 
 .bottom-title {
     float: left;
-    top: 1%;
+    top: 1.5%;
     width: 100%;
     box-sizing: border-box;
     background-color: black;
-    padding: 15px;
+    padding-top: 10px;
     text-align: center;
 }
 
 .bottom-title h1{
     font-family: "FormulaCond";
-    font-size: 2vw;
+    font-size: 3vw;
     letter-spacing: 1px;
     color: white;
     text-decoration: none;
@@ -185,44 +185,44 @@ td h1{
 
 .nametable .name1 h1:hover{
     background-color: red;
-    box-shadow: 0px 0px 40px rgba(250,0,0,0.8);
+    box-shadow: 0px 0px 80px rgba(250,0,0,1);
     color: white;
 }
 
 .nametable .name2 h1:hover{
     background-color: darkorange;
     color: white;
-    box-shadow: 0px 0px 40px rgba(250,0,0,0.8);
+    box-shadow: 0px 0px 80px rgba(250,120,0,1);
 }
 
 .nametable .name3 h1:hover{
     background-color: goldenrod;
     color: white;
-    box-shadow: 0px 0px 40px rgba(250,110,0,0.8);
+    box-shadow: 0px 0px 80px rgba(100,110,0,1);
 }
 
 .nametable .name4 h1:hover{
     background-color: green;
     color: white;
-    box-shadow: 0px 0px 40px rgba(0,250,0,0.8);
+    box-shadow: 0px 0px 80px rgba(0,250,0,1);
 }
 
 .nametable .name5 h1:hover{
     background-color: darkblue;
     color: white;
-    box-shadow: 0px 0px 40px rgba(60,0,255,0.8);
+    box-shadow: 0px 0px 80px rgba(60,0,255,1);
 }
 
 .nametable .name6 h1:hover{
     background-color: blueviolet;
     color: white;
-    box-shadow: 0px 0px 40px rgba(130,0,255,0.8);
+    box-shadow: 0px 0px 80px rgba(130,0,255,1);
 }
 
 .nametable .name7 h1:hover{
     background-color: deeppink;
     color: white;
-    box-shadow: 0px 0px 40px rgba(220,0,255,0.8);
+    box-shadow: 0px 0px 80px rgba(220,0,255,1);
 }
 
 .home-gallery-right {    
