@@ -36,7 +36,7 @@
 
 @keyframes left {
     from {transform: translate(0vw, 0vw);}
-    to {transform: translate(-124.25vw, 0vw);}
+    to {transform: translate(-125vw, 0vw);}
 }
 
 .gallery-view-img-container.left {
