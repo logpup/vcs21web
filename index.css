@@ -300,9 +300,13 @@ img{
     margin: 2vw;
 }
 
+.artistphoto{
+    height: 50%;
+}
+
 .artistinfo{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     
     justify-content: center;
@@ -315,8 +319,8 @@ td h2{
   line-height: 18px;    
   letter-spacing: -.8px;
   border: 1px solid black;
-  border-width: thin;
-  border-radius: 20px;
+  border-width: thin 5px thin thin;
+  border-radius: 20px 20px 20px 0px;
   padding: 10px;
   
 }
@@ -329,8 +333,7 @@ td h3{
   letter-spacing: -.8px;
   border: 1px solid black;
   border-width: thin;
-  padding: 10px;
-  
+  padding: 10px; 
 }
 
 
