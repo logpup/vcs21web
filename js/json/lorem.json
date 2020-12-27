@@ -31,7 +31,7 @@
     },
     "3": {
         "id" : 3,
-        "url" : "../assets/images/lorem-pixel/lorem-03.jpg",
+        "url" : "assets/images/lorem-pixel/lorem-03.jpg",
         "width" : 2000,
         "height" : 1359,
         "title" : "Veloster",
@@ -41,7 +41,7 @@
     },
     "4": {
         "id" : 4,
-        "url" : "../assets/images/lorem-pixel/lorem-04.jpg",
+        "url" : "assets/images/lorem-pixel/lorem-04.jpg",
         "width" : 2004,
         "height" : 1229,
         "title" : "Sienna",
@@ -51,7 +51,7 @@
     },
     "5": {
         "id" : 5,
-        "url" : "../assets/images/lorem-pixel/lorem-05.jpg",
+        "url" : "assets/images/lorem-pixel/lorem-05.jpg",
         "width" : 2004,
         "height" : 1229,
         "title" : "Sonata",
