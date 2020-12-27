@@ -99,17 +99,17 @@
 
 .bottom-title {
     float: left;
-    top: 1.5%;
+    top: 4%;
     width: 100%;
     box-sizing: border-box;
     background-color: black;
-    padding-top: 10px;
     text-align: center;
+    padding: 10px;
 }
 
 .bottom-title h1{
-    font-family: "FormulaCond";
-    font-size: 3vw;
+    font-family: "MajorMono";
+    font-size: 1.5vw;
     letter-spacing: 1px;
     color: white;
     text-decoration: none;
