@@ -63,7 +63,7 @@
 .home-menu-left {
     float: left;
     width: 28vw;
-    z-index: 9999;
+    z-index: 9;
     margin: 0px;
     padding: 10px;
 }
@@ -158,10 +158,22 @@
     
 }
 
+.home-gallery-right { 
+    margin: 0px 20px 20px 20px;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: white;
+    padding-left: 2vw;
+    z-index: 999;
+}
+
+/* Artist Tables with Color */
+
 .nametable{
     padding-top: 15px;
     padding-bottom: 10px;
     width: 100%;
+    height: 100%;
     text-align: center;
     justify-content: center;
 }
@@ -172,14 +184,14 @@ td{
 
 td h1{
   color: black;
-  font-family: "SupplyReg";
-  font-size: 13px;
-  line-height: 18px;    
+  font-family: "MajorMono";
+  font-size: 25px;
+  line-height: 28px;    
   letter-spacing: -.8px;
   border: 1px solid black;
   border-width: thin thin 4px thin;
   border-radius: 100px 100px 100px 100px;    
-  padding: 4px 5px;   
+  padding: 30px 5px 30px 5px;   
 }
 
 .blankname{
@@ -193,12 +205,14 @@ td h1{
     background-color: red;
     box-shadow: 0px 0px 80px rgba(250,0,0,1);
     color: white;
+    z-index: 9999;
 }
 
 .nametable .name2 h1:hover{
     background-color: darkorange;
     color: white;
     box-shadow: 0px 0px 80px rgba(250,120,0,1);
+    z-index: 9999;
 }
 
 .nametable .name3 h1:hover{
@@ -231,87 +245,6 @@ td h1{
     box-shadow: 0px 0px 80px rgba(220,0,255,1);
 }
 
-.home-gallery-right {    
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: white;
-    padding-left: 2vw;
-}
-
-.home-gallery-right-col1 {
-    position: absolute;
-    width: 30vw;
-    margin: 2vw;
-    
-}
-
-/* Image Gallery with Popup Box */
-
-.home-gallery-right-col1 .box{
- 
-    transform-style: preserve-3d;
-    
-}
-
-.home-gallery-right-col1 .box:hover{
-    box-shadow: 0px 0px 40px rgba(250,250,250,0.6);
-    z-index: 10;
-}
-
-.home-gallery-right-col1 .box .imgbox{
-    width: 100%;
-    height: 100%;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-.home-gallery-right-col1 .box .contentbox{
-    position: absolute;
-    width: 80%;
-    top: 10%;
-    left: 7%;
-    right: 7%;
-    background: #000000;
-    color: #fff;
-    border-radius: 10px;
-    transform: translateZ(20px) scaleY(0);
-    padding:  10px 10px;
-    transform-origin: top;
-    transition: 0.1s;
-    transform-style: preserve-3d;
-    z-index: 0;
-}
-
-.home-gallery-right-col1 .box:hover .contentbox{
-    transform: translateZ(40px) scaleY(1);
-    z-index: 10;
-}
-.home-gallery-img{
-    width: 100%;
-}
-
-.home-gallery-right-col2 {
-    position: absolute;
-    left: 35vw;
-    width: 30vw;
-    margin: 2vw;
-}
-
-.artistphoto{
-    height: 50%;
-}
-
-.artistinfo{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    
-    justify-content: center;
-}
-
 td h2{
   color: black;
   font-family: "SupplyReg";
@@ -334,6 +267,20 @@ td h3{
   border: 1px solid black;
   border-width: thin;
   padding: 10px; 
+}
+
+/* Naomi.html */
+
+.artistphoto{
+    height: 50%;
+}
+
+.artistinfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    
+    justify-content: center;
 }
 
 
