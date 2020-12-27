@@ -283,6 +283,195 @@ td h3{
     justify-content: center;
 }
 
+/* GALLERY VIEW*/
+.gallery-view{
+    position: fixed;
+}
+
+/* IMAGE CONTAINER */
+.gallery-view-img-container{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    top: 16vw;
+    z-index: -10;
+    margin-left: -20%
+}
+
+.gallery-view-img-container-prev{
+    left: -100vw;
+}
+
+.gallery-view-img-container-curr{
+    left: 50%;
+}
+
+.gallery-view-img-container-next{
+    right: -100vw;
+}
+
+/* IMAGES */
+
+.gallery-view-img {
+    width: 100%;
+}
+
+/* SLIDE ANIMATION*/
+
+/* forwards */
+
+@keyframes left {
+    from {transform: translate(0vw, 0vw);}
+    to {transform: translate(-122vw, 0vw);}
+}
+
+.gallery-view-img-container.left {
+    -webkit-animation: left 1s forwards;
+    -moz-animation: left 1s forwards;
+    -o-animation: left 1s forwards;
+    animation: left 1s forwards;
+}
+
+/* backwards */
+
+@keyframes right {
+    from {transform: translate(0vw, 0vw);}
+    to {transform: translate(133.5vw, 0vw);}
+}
+
+.gallery-view-img-container.right {
+    -webkit-animation: right 1s forwards;
+    -moz-animation: right 1s forwards;
+    -o-animation: right 1s forwards;
+    animation: right 1s forwards;
+}
+
+.gallery-view-col{
+    width: 15vw;
+    height: 85vh;
+    display: inline-block;
+}
+
+.gallery-view-col-left{
+    position: absolute;
+    left: 10vw;
+}
+
+.gallery-view-col-right{
+    position: absolute;
+    right: 4vw;
+}
+
+/* ARROW BUTTONS */
+
+.gallery-view-arrow-button {
+    width: 5vh;
+
+    color: black;
+    font-family: "SupplyReg";
+    font-size: 13px;
+    line-height: 18px;    
+    letter-spacing: -.8px;
+    border: 1px solid black;
+    border-width: thin thin 4px thin;
+    border-radius: 100px 100px 100px 100px;    
+    padding: 4px 10px;   
+    text-decoration: none;
+    margin: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.gallery-view-arrow-button-left {
+    position: inherit;
+    left: 0;
+    top: 38vh;
+}
+
+.gallery-view-arrow-button-left:hover {
+    background-color: rgb(254, 42, 77);
+    box-shadow: 0px 0px 40px rgb(254, 42, 77);
+    color: white;
+    cursor: pointer;
+}
+
+.gallery-view-arrow-button-right {
+    position: inherit;
+    right: 0vw;
+    top: 38vh;
+}
+
+.gallery-view-arrow-button-right:hover {
+    background-color: greenyellow;
+    box-shadow: 0px 0px 40px  greenyellow;
+    color: white;
+    cursor: pointer;
+}
+
+/* HOME BUTTON & PIECE DESCRIPTIONS */
+
+.gallery-view-col{
+    width: 15vw;
+    height: 85vh;
+    display: inline-block;
+}
+
+.gallery-view-col-left{
+    position: absolute;
+    left: 4vw;
+}
+
+.gallery-view-col-right{
+    position: absolute;
+    right: 4vw;
+}
+
+/* ARROW BUTTONS */
+
+.gallery-view-arrow-button {
+    width: 5vh;
+
+    color: black;
+    font-family: "SupplyReg";
+    font-size: 13px;
+    line-height: 18px;    
+    letter-spacing: -.8px;
+    border: 1px solid black;
+    border-width: thin thin 4px thin;
+    border-radius: 100px 100px 100px 100px;    
+    padding: 4px 10px;   
+    text-decoration: none;
+    margin: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.gallery-view-arrow-button-left {
+    position: inherit;
+    left: 0;
+    top: 38vh;
+}
+
+.gallery-view-arrow-button-left:hover {
+    background-color: rgb(254, 42, 77);
+    box-shadow: 0px 0px 40px rgb(254, 42, 77);
+    color: white;
+    cursor: pointer;
+}
+
+.gallery-view-arrow-button-right {
+    position: inherit;
+    right: 0vw;
+    top: 38vh;
+}
+
+.gallery-view-arrow-button-right:hover {
+    background-color: greenyellow;
+    box-shadow: 0px 0px 40px  greenyellow;
+    color: white;
+    cursor: pointer;
+}
+
 
 
 
