@@ -65,11 +65,11 @@
     width: 28vw;
     z-index: 9999;
     margin: 0px;
+    padding: 10px;
 }
 
 .home-menu-left-top {
     background-color: white;
-    padding: 10px 10px 5px 10px;
     height: 98vmin;
 }
 
@@ -79,8 +79,9 @@
     margin-bottom: 10px;
     box-sizing: border-box;
     background-color: black;
-    padding: 15px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
     text-align: center;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .home-title h1{
@@ -105,6 +106,7 @@
     background-color: black;
     text-align: center;
     padding: 10px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .bottom-title h1{
@@ -232,7 +234,7 @@ td h1{
 .home-gallery-right {    
     height: 100vh;
     overflow-y: scroll;
-    background-color: black;
+    background-color: white;
     padding-left: 2vw;
 }
 
@@ -298,83 +300,39 @@ img{
     margin: 2vw;
 }
 
-.profile-menu-left {
-    font-family: "Helvetica Neue";
-    width: 34vw;
-    margin: .5vw 1vw .5vw 1vw;
-    padding: .5vw;
-    position: fixed;
-}
-
-.profile-menu-left-top {
-    position: inherit;
-    top: 2vw;
-    width: 34vw;
-}
-
-#profile-title {
-    font-family: "Helvetica Neue";
-    font-weight: 700;
-    font-size: 2.5vw;
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    position: absolute;
-    top: 0;
+.artistinfo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
     
+    justify-content: center;
 }
 
-#profile-name {
-    font-family: "Helvetica";
-    font-weight: 300;
-    font-size: 3.2vw;
-    color: black;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    display: inline-block;
+td h2{
+  color: black;
+  font-family: "SupplyReg";
+  font-size: 13px;
+  line-height: 18px;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin;
+  border-radius: 20px;
+  padding: 10px;
+  
 }
 
-.profile-menu-left-middle{
-    position: inherit;
-    top: 25vh;
-    width: 34vw;
-    height: 55vh;
+td h3{
+  color: black;
+  font-family: "SupplyReg";
+  font-size: 13px;
+  line-height: 18px;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin;
+  padding: 10px;
+  
 }
 
-#profile-photo{
-    width: 18vw;
-    display: inline-block;
-}
 
-.profile-info-button{
-    font-family: Helvetica;
-    font-weight: 400;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 0vh;
-    margin: 0;
-}
 
-.profile-menu-left-bottom {
-    position: inherit;
-    bottom: 2vw;
-    width: 34vw;
-}
 
-#profile-writing-button {
-    width: 5vw;
-}
-
-#profile-student-dropdown {
-    position: absolute;
-    bottom: 0vw;
-    right: 0vw;
-    font-size: 2.5vw;
-    font-weight: 700;
-}
-
-#profile-student-dropdown-test {
-    text-decoration: none;
-    color: black;
-}
