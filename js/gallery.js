@@ -3,10 +3,12 @@ $(document).ready(function(){
     // JSON Call
     $.getJSON("js/json/lorem.json", function(data) {
         
+        // Formatting Images Based on Width and Height
+
         // Initial Setup
-        var prev = 1;
-        var curr = 2;
-        var next = 3;
+        var prev = 0;
+        var curr = 1;
+        var next = 2;
 
         var gallery = data;
         var gallery_length = Object.keys(gallery).length;
@@ -14,11 +16,16 @@ $(document).ready(function(){
         $(".gallery-view-img-prev").attr("src", gallery[prev].url);
         $(".gallery-view-img-curr").attr("src", gallery[curr].url);
         $(".gallery-view-img-next").attr("src", gallery[next].url);
+        $(".gallery-view-piece-description-title").html(gallery[curr].title)
+        $(".gallery-view-piece-description-artist").html(gallery[curr].artist)
+        $(".gallery-view-piece-description-year").html(gallery[curr].year)
 
         console.log(gallery_length);
+        
 
         // Slide Animation
         function slideLeft(){
+
             $(".gallery-view-img-container").addClass("left");
 
             prev += 1;
@@ -98,6 +105,9 @@ $(document).ready(function(){
                     $(".gallery-view-img-prev").attr("src", gallery[prev].url);
                     $(".gallery-view-img-curr").attr("src", gallery[curr].url);
                     $(".gallery-view-img-next").attr("src", gallery[next].url);
+                    $(".gallery-view-piece-description-title").html(gallery[curr].title)
+                    $(".gallery-view-piece-description-artist").html(gallery[curr].artist)
+                    $(".gallery-view-piece-description-year").html(gallery[curr].year)
                 }
             });
             console.log("BACK");

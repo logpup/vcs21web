@@ -42,8 +42,8 @@
     "4": {
         "id" : 4,
         "url" : "assets/images/lorem-pixel/lorem-04.jpg",
-        "width" : 2004,
-        "height" : 1229,
+        "width" : 2000,
+        "height" : 5000,
         "title" : "Sienna",
         "artist" : "Toyota",
         "year" : 2008, 
