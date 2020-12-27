@@ -6,12 +6,14 @@ $(document).ready(function(){
         // Formatting Images Based on Width and Height
 
         // Initial Setup
-        var prev = 0;
-        var curr = 1;
-        var next = 2;
+        
 
         var gallery = data;
         var gallery_length = Object.keys(gallery).length;
+
+        var prev = 5;
+        var curr = 0;
+        var next = 1;
 
         $(".gallery-view-img-prev").attr("src", gallery[prev].url);
         $(".gallery-view-img-curr").attr("src", gallery[curr].url);

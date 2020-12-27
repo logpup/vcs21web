@@ -1,3 +1,66 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Helvetica Light";
+    src:  url("assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Cirka;
+    src: url("assets/fonts/Cirka-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url("assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url("assets/fonts/NeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueWorld;
+    src: url("assets/fonts/NeueWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hatton;
+    src: url("assets/fonts/Hatton-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyReg;
+    src: url("assets/fonts/Supply-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyLight;
+    src: url("assets/fonts/Supply-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FormulaCond;
+    src: url("assets/fonts/FormulaCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MajorMono;
+    src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
+}
+
+.temp-gallery{
+    position: absolute;
+    top: 0;
+    right: 40vw;
+    width: 20%;
+}
+
 /* Left Div */
 .profile-menu-left{
     width: 28vw;
