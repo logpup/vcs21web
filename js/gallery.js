@@ -27,6 +27,8 @@ $(document).ready(function(){
             curr += 1;
             next += 1;
 
+            console.log("forw")
+
             $('.gallery-view-img-container').on('animationend webkitAnimationEnd oAnimationEnd', function () {
 
                 if (event.animationName == 'left') {
@@ -34,21 +36,19 @@ $(document).ready(function(){
                     $(".gallery-view-img-prev").attr("src", gallery[prev].url);
                     $(".gallery-view-img-curr").attr("src", gallery[curr].url);
                     $(".gallery-view-img-next").attr("src", gallery[next].url);
-                    console.log(curr);
                 }
-
             });
-
+            console.log(curr);
         });
+        
 
         // backwards
         $(".gallery-view-arrow-button-left").click(function(){
-            $(".gallery-view-img-container").addClass("right");
-            });
-
             prev -= 1;
             curr -= 1;
             next -= 1;
+            
+            console.log("back")
 
             $('.gallery-view-img-container').on('animationend webkitAnimationEnd oAnimationEnd', function () {
 
@@ -57,11 +57,11 @@ $(document).ready(function(){
                     $(".gallery-view-img-prev").attr("src", gallery[prev].url);
                     $(".gallery-view-img-curr").attr("src", gallery[curr].url);
                     $(".gallery-view-img-next").attr("src", gallery[next].url);
-                    console.log(curr);
                 }
-                
             });
-
+            console.log(curr);
+            $(".gallery-view-img-container").addClass("right");
+            });
         })
 
     
