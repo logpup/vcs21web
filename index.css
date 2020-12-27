@@ -4,19 +4,8 @@
     text-decoration: none;
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-    overflow: hidden;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
+.content {
+    overflow:hidden;
 }
 
 @font-face {
@@ -81,6 +70,8 @@ body {
     z-index: 9;
     margin: 0px;
     padding: 10px;
+    top: 18vh;
+    left: 8vw;
 }
 
 .home-menu-left-top {
@@ -150,11 +141,18 @@ body {
     border-style: solid;
     border-width: thin thin thin 15px;
     border-radius: 15px 0px 0px 15px;
-    overflow-y: scroll
+    border-color: black;
+    overflow-y: scroll;
+}
+
+#masthead:hover {
+    color: white;
+    background-color: rgb(39, 39, 247);
+    box-shadow: 0px 0px 70px  rgb(39, 39, 247);
 }
 
 .socials{
-    
+
 }
 
 #mastbutton {
@@ -163,7 +161,7 @@ body {
     padding: 10px 10px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
-    font-size: 13px;
+    font-size: 1vw;
     line-height: 18px;  
     letter-spacing: -.8px;
     text-align: center;
@@ -175,18 +173,19 @@ body {
 
 .home-gallery-right { 
     margin: 0 3vw 0 3vw;
-    height: 98vh;
+    height: 100%;
     overflow-y: scroll;
-    background-color: white;
     padding-left: 2vw;
     z-index: 999;
+    top: 14vh;
+    right: -3vw;
 }
 
 /* Artist Tables with Color */
 
 .nametable{
-    padding: 2vh 4vw 2vh 4vw;
-    width: 50vw;
+    padding: 10vh 8vw 10vh 8vw;
+    width: 100%;
     height: 50vh;
     text-align: center;
     justify-content: center;
@@ -199,13 +198,13 @@ td{
 td h1{
   color: black;
   font-family: "MajorMono";
-  font-size: 3vh;
+  font-size: 2vh;
   line-height: 3vh;    
   letter-spacing: -.8px;
   border: 1px solid black;
-  border-width: thin thin .7vh thin;
+  border-width: thin thin .6vh thin;
   border-radius: 100px 100px 100px 100px;     
-  padding: 2vh 3vw 2vh 3vw;
+  padding: 1vh 2vw 1vh 2vw;
 }
 
 .blankname{
