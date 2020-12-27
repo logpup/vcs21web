@@ -247,7 +247,7 @@ td h1{
 }
 
 .home-gallery-right-col1 .box:hover{
-    box-shadow: 0px 0px 20px rgba(250,0,0,0.4);
+    box-shadow: 0px 0px 40px rgba(250,250,250,0.6);
     z-index: 10;
 }
 
