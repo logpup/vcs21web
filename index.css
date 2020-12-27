@@ -160,7 +160,7 @@
 
 .home-gallery-right { 
     margin: 0px 20px 20px 20px;
-    height: 100vh;
+    height: 98vh;
     overflow-y: scroll;
     background-color: white;
     padding-left: 2vw;
@@ -191,7 +191,7 @@ td h1{
   border: 1px solid black;
   border-width: thin thin 4px thin;
   border-radius: 100px 100px 100px 100px;    
-  padding: 30px 5px 30px 5px;   
+  padding: 20px 5px 20px 5px;   
 }
 
 .blankname{
