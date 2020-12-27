@@ -63,19 +63,14 @@
 .home-menu-left {
     float: left;
     width: 28vw;
-    height: 100%;
     z-index: 9999;
+    margin: 0px;
 }
 
 .home-menu-left-top {
-    float: left;
     background-color: white;
-    padding: 5px 10px 5px 10px;
-    width: 100%;
-    height: 100%;
-    border-style: solid;
-    border-width: 0px thin 0px 0px;
-    border-radius: 0px;
+    padding: 5px 15px 5px 10px;
+    height: 98vmin;
 }
 
 /* 3dream sprial */
@@ -103,7 +98,7 @@
 /* VCS Seniors */
 
 .bottom-title {
-    float: right;
+    float: left;
     top: 2%;
     width: 100%;
     box-sizing: border-box;
@@ -142,7 +137,7 @@
 
 #mastbutton {
     float: left;
-    margin: 0px 10px 15px 10px;
+    margin: 5px 10px 5px 10px;
     padding: 10px 10px 10px 10px;
     width: 4.5vw;
     font-family: "SupplyReg";
@@ -230,17 +225,17 @@ td h1{
 }
 
 .home-gallery-right {
-    position: absolute;
-    right: 0px;
-    width: 68vw;
+    float: left;
+    width: 70.23%;
     height: 100vh;
     overflow-y: scroll;
+    background-color: black;
+    padding-left: 21px;
 }
 
 .home-gallery-right-col1 {
-    width: 30vw;
     position: absolute;
-    left: 0vw;
+    width: 30vw;
     margin: 1.5vw;
     
 }
@@ -294,9 +289,9 @@ img{
 }
 
 .home-gallery-right-col2 {
-    width: 30vw;
     position: absolute;
-    right: 0vw;
+    left: 35vw;
+    width: 30vw;
     margin: 1.5vw;
 }
 
