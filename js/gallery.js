@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    // JSON Call Test
-    
+
+    // JSON Call
     $.getJSON("js/json/lorem.json", function(data) {
         
-        // Slide Animation
+        // Initial Setup
         var prev = 1;
         var curr = 2;
         var next = 3;
@@ -15,9 +15,10 @@ $(document).ready(function(){
         $(".gallery-view-img-curr").attr("src", gallery[curr].url);
         $(".gallery-view-img-next").attr("src", gallery[next].url);
 
-        // forwards
-        $(".gallery-view-arrow-button-right").click(function(){
+        console.log(gallery_length);
 
+        // Slide Animation
+        function slideLeft(){
             $(".gallery-view-img-container").addClass("left");
 
             prev += 1;
@@ -25,25 +26,23 @@ $(document).ready(function(){
             next += 1;
 
             if (prev == -1) {
-                prev = 5;
+                prev = gallery_length - 1;
             }
             if (curr == -1) {
-                curr = 5;
+                curr = gallery_length - 1;
             }
             if (next == -1) {
-                next = 5;
+                next = gallery_length - 1;
             }
-            if (prev == 6) {
+            if (prev == gallery_length) {
                 prev = 0;
             }
-            if (curr == 6) {
+            if (curr == gallery_length) {
                 curr = 0;
             }
-            if (next == 6) {
+            if (next == gallery_length) {
                 next = 0;
             }
-
-            console.log("forw")
 
             $('.gallery-view-img-container').on('animationend webkitAnimationEnd oAnimationEnd', function () {
 
@@ -57,39 +56,40 @@ $(document).ready(function(){
                     $(".gallery-view-piece-description-artist").html(gallery[curr].artist)
                     $(".gallery-view-piece-description-year").html(gallery[curr].year)
                 }
+                
             });
+
+            console.log("FORW")
             console.log(prev);
             console.log(curr);
             console.log(next);
-        });
-        
+        };
 
-        // backwards
-        $(".gallery-view-arrow-button-left").click(function(){
+        function slideRight(){
+            $(".gallery-view-img-container").addClass("right");
+
             prev -= 1;
             curr -= 1;
             next -= 1;
 
             if (prev == -1) {
-                prev = 5;
+                prev = gallery_length - 1;
             }
             if (curr == -1) {
-                curr = 5;
+                curr = gallery_length - 1;
             }
             if (next == -1) {
-                next = 5;
+                next = gallery_length - 1;
             }
-            if (prev == 6) {
+            if (prev == gallery_length) {
                 prev = 0;
             }
-            if (curr == 6) {
+            if (curr == gallery_length) {
                 curr = 0;
             }
-            if (next == 6) {
+            if (next == gallery_length) {
                 next = 0;
             }
-            
-            console.log("back")
 
             $('.gallery-view-img-container').on('animationend webkitAnimationEnd oAnimationEnd', function () {
 
@@ -100,9 +100,47 @@ $(document).ready(function(){
                     $(".gallery-view-img-next").attr("src", gallery[next].url);
                 }
             });
-            $(".gallery-view-img-container").addClass("right");
-            });
-        })
-    
-        // Piece Description
+            console.log("BACK");
+            console.log(prev);
+            console.log(curr);
+            console.log(next);
+        };
+
+        // FORWARD CLICK
+        $(".gallery-view-arrow-button-right").click(function(){
+                slideLeft();
+        });
+        
+
+        // BACKWARD CLICK
+        $(".gallery-view-arrow-button-left").click(function(){
+                slideRight();
+        });
+
+        // KEYPRESS SETUP
+        window.addEventListener("keydown", checkKeyDown, false);
+        window.addEventListener("keyup", checkKeyUp, false);
+
+        // KEYDOWN
+        function checkKeyDown(key){
+            if (key.keyCode == "37"){
+                $('.gallery-view-arrow-button-left').addClass("hover");
+                }
+            if (key.keyCode == "39"){
+                $('.gallery-view-arrow-button-right').addClass("hover");
+                }
+        }
+
+        // KEYUP
+        function checkKeyUp(key){
+            if (key.keyCode == "37"){
+                $(".gallery-view-arrow-button-left").removeClass("hover");
+                slideRight();
+                }
+            if (key.keyCode == "39"){
+                $(".gallery-view-arrow-button-right").removeClass("hover");
+                slideLeft();
+                }
+        } 
+    });
 });
