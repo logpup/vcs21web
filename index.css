@@ -84,7 +84,7 @@
 }
 
 .home-title h1{
-    font-family: "Helvetica";
+    font-family: "Hatton";
     font-size: 2vw;
     color: white;
     text-decoration: none;
@@ -108,8 +108,9 @@
 }
 
 .bottom-title h1{
-    font-family: "Helvetica";
+    font-family: "FormulaCond";
     font-size: 2vw;
+    letter-spacing: 1px;
     color: white;
     text-decoration: none;
 }
