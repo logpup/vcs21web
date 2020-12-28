@@ -98,7 +98,7 @@
   line-height: 3vh;    
   letter-spacing: -.8px;
   border: 0px;
-  border-width: thin thin .6vh thin;
+  border-width: thin thin thin thin;
   border-radius: 0px 0px 0px 0px;     
   padding: 3vh 1.5vw 2.7vh 1.5vw;
   background-color: black;
