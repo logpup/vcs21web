@@ -54,10 +54,6 @@
     src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
 }
 
-* {
-    font-family: SupplyLight;
-}
-
 /* Left Div */
 
 .pp-container {
@@ -76,13 +72,13 @@
 }
 
 .bio-container {
+    font-family: "SupplyReg";
     width: 10vw;
     height: 10vh;
     position: absolute;
     right: -1vw;
     top: 0;
     font-size: 1.5vh;
-    font-weight: 800;
 }
 
 .bio-bubble {
