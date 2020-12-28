@@ -19,6 +19,15 @@ $(document).ready(function(){
         for (k = 0; k < profile_artist_list.length; k++){
             $(".grid-gallery").append($("<div></div>").append($("<a></a>").attr("href", "gallery.html").append($("<img>").attr({class:"grid-image", src: profile_artist_list[k]}))));
         }
+
+        //Pop Up
+        $("#test").click(function(){
+            $(".gallery-pop-up-container").css("display", "initial");
+        });
+
+        $(".cross").click(function(){
+            $(".gallery-pop-up-container").css("display", "none");
+        });
     
     });
 });
