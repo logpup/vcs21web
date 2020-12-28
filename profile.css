@@ -60,12 +60,40 @@
 
 /* Left Div */
 
+.pp-container {
+    width: 21.5vw;
+    height: 30vh;
+    border-radius: 1vw;
+    border: 1px black solid;
+    margin: 1.25vh 1.5vw 1.25vh 1.5vw;
+}
+
 .pp {
     width: auto;
-    height: 10vh;
-    margin: 2vw;
-    border: 1px black solid;
+    height: 95%;
     border-radius: 1vw;
+    margin: .8vh .5vw 1vh .5vw;
+}
+
+.statement {
+    margin: 15px 5px 15px 5px;
+    padding: 10px 10px 10px 15px;
+    height: 30vh;
+    font-family: "SupplyReg";
+    font-size: 13px;
+    line-height: 18px;    
+    letter-spacing: -.8px;
+    border-style: solid;
+    border-width: thin thin thin 15px;
+    border-radius: 15px 0px 0px 15px;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+.statement:hover {
+    color: white;
+    background-color: deeppink;
+    box-shadow: 0px 0px 70px  deeppink;
 }
 
 /* Artist Tables with Color */
