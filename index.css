@@ -146,12 +146,12 @@
 }
 
 .home-right{
-    float: right;
-    width: 71vw;
+    float: left;
+    width: 70vw;
     height: 85vh;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .card{
@@ -196,7 +196,7 @@
     border-width: thin thin thin 15px;
     border-radius: 15px 0px 0px 15px;
     border-color: black;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .masthead:hover {
