@@ -5,98 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VCS '21 NAOMI</title>
     <link rel="stylesheet" href="profile.css">
-    <script src="js/profile.js"></script>
+    <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/profile1.js"></script>
 </head>
 <body>
-      
-      <!-- stats.js panels (direct js into html)-->
-   
-   <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;bottom:0px;right:0px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
-    
-    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;bottom:0px;right:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
-    
-    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;bottom:0px;right:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
-    
-       
-        <div class="profile-menu-left">
-            <div class="profile-menu-left-top">
-               
-              <div class="artistphoto-container">
-                <img class="artistphoto" src="assets/images/profile-photo/profile-photo-naomi.png">
-              </div>
-               
-               
-               <table class="artistinfo">
-                   <tr>
-                       <td><h2>NAOMI TRIESTMAN</h2></td>
-                       <td><h2>OCT 12 1996</h2></td>
-                   </tr>
-                   <tr>
-                       <td><h2>SHE / HER</h2></td>
-                       <td><h2>CERAMICS</h2></td>
-                   </tr>
-                   <tr>
-                       <td><h2>NASHVILLE, TN</h2></td>
-                       <td><h2>BROOKLYN, NY</h2></td>
-                   </tr>
-               </table>
+        <!-- LEFT SIDE CONTAINER -->
+        <div class="home-left"> 
+          <div class="card">
+           <div class="home-title">
+               <a href="index.html">
+                   <h1>
+                       <span>3 / Dream Spiral_Relax.</span>
+                   </h1>
+               </a>
+           </div>
 
-               <table class="artistdescription">
+           <p class="masthead">
+                   In these harrowing times a congregation made of burgeoning young artists, defied the odds and decided to produce work. Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output.
+               <br><br>
+                   Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output. Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output.
+               <br><br>
+                   Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output.
+           </p>
+           
+           <div class="socials">
+               <table>
                    <tr>
-                        <td><h3>Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output. Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output.
-                        <br><br>
-                        Disparate in style, but common in their willingness to create and cogitate a confusing couple of months for an unknown audience online. This is their output.</h3></td>
+                       <td><h4>SVAVCS</h1></td>
+                       <td><h4>INSTAGRAM</h1></td>
+                       <td><h4>TWITTER</h1></td>
                    </tr>
                </table>
-                
-                <!-- I made a class for the table in case there is going to be
-                more than one table used -->
-                
-                <table class="nametable">
-                  <tr>
-                    <td class="blankname"></td>
-                      <td class="name1"><a href="profile1.html" target="_self"><h1>Mina Al <br>Huquail</h1></a></td>
-                    <td class="blankname"></td>
-                  </tr>
-                  <tr>
-                      <td class="name2"><a href="profile.html" target="_self"><h1>Julia <br>Colettes</h1></a>
-                      </td>
-                      <td class="blankname"></td>
-                      <td class="name3"><a href="profile.html" target="_self"><h1>Tyler <br>Downing</h1></a>
-                      </td>
-                  </tr>
-                  <tr>
-                    <td class="blankname"></td>
-                      <td class="name4"><a href="profile.html" target="_self"><h1>Jay <br>Park</h1></a>
-                      </td>
-                    <td class="blankname"></td>
-                  </tr>
-                  <tr>
-                      <td class="name5"><a href="profile.html" target="_self"><h1>Nour <br>Moustafa</h1></a></td>
-                    <td class="blankname"></td>
-                      <td class="name6"><a href="profile.html" target="_self"><h1>Juliet <br>Nelson</h1></a></td>
-                  </tr>
-                  <tr>
-                    <td class="blankname"></td>
-                      <td class="name7"><a href="profile.html" target="_self"><h1>Naomi <br>Triestman</h1></a></td>
-                    <td class="blankname"></td>
-                  </tr>
-                </table>
-                
-                <!--
-                <div id="sva-logo">
-                    <img src="assets/images/sva-logo/svalogo.svg" alt="black sva flower logo">
+           </div>
+           <!--
+           <div class="bottom-title" >
+               <a href="index.html">
+                  <h1>
+                      <span>
+                           VCS '21 UDG SENIORS
+                      </span>
+                   </h1>
+               </a>
+           </div>
+           -->
+       </div>
+     </div>
+
+        <div class="profile-menu-right">
+            <div class="grid-gallery">
+                <div id="test">
+                    <a>
+                        <img class="grid-image" src="assets/images/lorem-pixel/lorem-00.jpg" alt="">
+                    </a>
                 </div>
-                -->
-
             </div>
-            
         </div>
-        <div class="temp-gallery">
-          <a href="gallery.html">
-            <img src="assets/images/lorem-pixel/lorem-00.jpg" alt="lorem-00">
-          </a>
+        <div class="gallery-pop-up-container active">
+          <div class="gallery-pop-up">
+            <div class="cross">✖</div>
+            <div class="pop-up-piece-description-container">
+              <span>This American Milkweed</span>
+              <br>
+              <span>Naomia Treistman</span>
+              <br>
+              <span>2020</span>
+            </div>
+            <div class="pop-up-image-container">
+              <img class="pop-up-image" src="assets/images/lorem-pixel/lorem-00.jpg" alt="">
+            </div>
+          </div>
         </div>
+        
 </body>
 </html>
