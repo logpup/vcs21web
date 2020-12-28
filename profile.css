@@ -54,6 +54,10 @@
     src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
 }
 
+* {
+    font-family: SupplyLight;
+}
+
 .temp-gallery{
     position: absolute;
     top: 0;
@@ -181,4 +185,125 @@ td h3{
   border: 1px solid black;
   border-width: thin;
   padding: 10px; 
+}
+
+.profile-menu-right {
+    position: absolute;
+    right: 1.5vw;
+    top: 1.5vh;
+    width: 68vw;
+    height: 96vh;
+    /* border: 4px dashed black; */
+    
+}
+
+
+/* Grid Gallery */
+
+.grid-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.grid-gallery > div {
+    width: 150px;
+    height: 150px;
+    /* border: 2px dashed black; */
+    border-radius: 20px;
+    background-color: pink;
+    margin: 20px;
+    text-align: center;
+    line-height: 155px;
+    font-size: 40px;
+}
+
+.grid-image{
+    width: 100%;
+    height: auto;
+}
+
+#test {
+    background-color: white;
+    border: none;
+}
+
+#test:hover {
+    cursor: pointer;
+}
+
+.gallery-pop-up-container {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    display: none;
+}
+
+.gallery-pop-up {
+    width: 90vw;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 5vh 5vw 5vh 5vw;
+    background: white;
+    z-index: 99;
+    border-radius: 2vw;
+}
+
+.pop-up-image-container {
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pop-up-image {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pop-up-piece-description-container {
+    text-align: right;
+    width: 15vw;
+    height: 10vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1vw;
+    padding: 1vw;
+    font-size: 2.25vh
+}
+
+.cross {
+    font-size: 5vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: .75vh .75vw 0 1vw;
+    padding: 0 .75vw 0 1vw;
+    color: lightgrey;
+}
+
+.cross:hover {
+    color: grey;
+    cursor: pointer;
 }

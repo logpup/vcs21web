@@ -1,3 +1,12 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+}
+
+.content {
+    /* overflow:hidden; */
+}
+
 @font-face {
     font-family: "Helvetica Neue";
     src: url("assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
@@ -54,36 +63,155 @@
     src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
 }
 
-* {
-    font-family: SupplyLight;
+/* 3dream sprial */
+
+.home-left{
+    float: left;
+    width: 25vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-.temp-gallery{
-    position: absolute;
-    top: 0;
-    right: 40vw;
-    width: 20%;
+.home-right{
+    float: left;
+    width: 71vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-/* Left Div */
-.profile-menu-left{
-    width: 28vw;
-}
-
-.artistphoto-container{
-    height: 30%
-}
-
-.artistphoto{
+.card{
     width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: thin thin thin thin;
+    border-radius: 20px 20px 20px 20px;
+    border-color: black;
 }
 
-.artistinfo{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.home-title {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.home-title h1{
+    font-family: "Hatton";
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.home-title:hover{
+    background-color: hotpink;
+    color: blue;
+}
+
+.masthead {
+    margin: 15px 5px 15px 5px;
+    padding: 10px 10px 10px 15px;
+    height: ;
+    font-family: "SupplyReg";
+    font-size: 13px;
+    line-height: 18px;    
+    letter-spacing: -.8px;
+    border-style: solid;
+    border-width: thin thin thin 15px;
+    border-radius: 15px 0px 0px 15px;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+.masthead:hover {
+    color: white;
+    background-color: rgb(39, 39, 247);
+    box-shadow: 0px 0px 70px  rgb(39, 39, 247);
+}
+
+/* VCS Seniors */
+
+/*
+.bottom-title {
+    box-sizing: border-box;
+    background-color: black;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    border-radius: 0px 00px 20px 20px;
+}
+
+
+.bottom-title h1{
+    font-family: "MajorMono";
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-title:hover{
+    background-color: dodgerblue;
+    color: blue;
+}
+*/
+
+/* title animation */
+
+.socials{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
     
+}
+
+.socials td{
+    border-style: solid;
+    border-width: thin thin 4px thin;
+    border-radius: 0px 20px 20px 20px;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.socials h4{
+    font-family: "MajorMono";
+    font-size: 1vw;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#mastbutton {
+    float: left;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 21.5%;
+    font-family: "SupplyReg";
+    font-size: 1vw;
+    line-height: 18px;  
+    letter-spacing: -.8px;
+    text-align: center;
+    border-style: solid;
+    border-width: thin thin 4px thin;
+    border-radius: 10px 0px 10px 0px;
+    
+}
+
+.home-gallery-right { 
+    float: left;
+    height: 100vh;
+    width: 70vw;
+    z-index: 999;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Artist Tables with Color */
@@ -91,13 +219,12 @@
 .nametable{
     padding: 10vh 8vw 10vh 8vw;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     text-align: center;
-    justify-content: center;
 }
 
 td{
-    width: 33%;
+
 }
 
 td h1{
@@ -123,7 +250,7 @@ td h1{
     background-color: red;
     box-shadow: 0px 0px 80px rgba(250,0,0,1);
     color: white;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .nametable .name2 h1:hover{
@@ -187,123 +314,19 @@ td h3{
   padding: 10px; 
 }
 
-.profile-menu-right {
-    position: absolute;
-    right: 1.5vw;
-    top: 1.5vh;
-    width: 68vw;
-    height: 96vh;
-    /* border: 4px dashed black; */
-    
+/* Naomi.html */
+
+.artistphoto{
+    height: 50%;
 }
 
-
-/* Grid Gallery */
-
-.grid-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.grid-gallery > div {
-    width: 150px;
-    height: 150px;
-    /* border: 2px dashed black; */
-    border-radius: 20px;
-    background-color: pink;
-    margin: 20px;
-    text-align: center;
-    line-height: 155px;
-    font-size: 40px;
-}
-
-.grid-image{
+.artistinfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    height: auto;
+    
+    justify-content: center;
 }
 
-#test {
-    background-color: white;
-    border: none;
-}
 
-#test:hover {
-    cursor: pointer;
-}
 
-.gallery-pop-up-container {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 99;
-    display: none;
-}
-
-.gallery-pop-up {
-    width: 90vw;
-    height: 90vh;
-    top: 0;
-    left: 0;
-    position: fixed;
-    margin: 5vh 5vw 5vh 5vw;
-    background: white;
-    z-index: 99;
-    border-radius: 2vw;
-}
-
-.pop-up-image-container {
-    max-height: 80%;
-    max-width: 80%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.pop-up-image {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.pop-up-piece-description-container {
-    text-align: right;
-    width: 15vw;
-    height: 10vh;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 1vw;
-    padding: 1vw;
-    font-size: 2.25vh
-}
-
-.cross {
-    font-size: 5vh;
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: .75vh .75vw 0 1vw;
-    padding: 0 .75vw 0 1vw;
-    color: lightgrey;
-}
-
-.cross:hover {
-    color: grey;
-    cursor: pointer;
-}
