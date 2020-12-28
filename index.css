@@ -69,7 +69,7 @@
     float: left;
     width: 100vw;
     height: 11.5vh;
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 
 .artist-names{
@@ -87,7 +87,7 @@
   letter-spacing: -.8px;
   border: 1px solid black;
   border-width: thin thin .6vh thin;
-  border-radius: 100px 100px 100px 100px;     
+  border-radius: 200px 200px 100px 100px;     
   padding: 1vh 2vw 1vh 2vw;
 }
 /* Name Hover Color*/
@@ -146,7 +146,7 @@
 }
 
 .home-right{
-    float: left;
+    float: right;
     width: 71vw;
     height: 85vh;
     display: flex;
@@ -187,7 +187,7 @@
 .masthead {
     margin: 15px 5px 15px 5px;
     padding: 10px 10px 10px 15px;
-    height: ;
+    height: 65%;
     font-family: "SupplyReg";
     font-size: 13px;
     line-height: 18px;    
