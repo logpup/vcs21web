@@ -193,21 +193,23 @@ td h3{
     top: 1.5vh;
     width: 68vw;
     height: 96vh;
-    border: 4px dashed black;
+    /* border: 4px dashed black; */
     
 }
 
 
 /* Grid Gallery */
+
 .grid-gallery{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .grid-gallery > div {
     width: 150px;
     height: 150px;
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
     border-radius: 20px;
     background-color: pink;
     margin: 20px;

@@ -1,62 +1,62 @@
 {
-    "0": {
-        "id" : 0,
-        "url" : "assets/images/lorem-pixel/lorem-00.jpg",
-        "width" : 1057,
-        "height" : 1042,
-        "title" : "Odyssey",
-        "artist" : "Honda",
-        "year" : 2019, 
-        "artist_id" : 0
-    },
-    "1": {
-        "id" : 1,
-        "url" : "assets/images/lorem-pixel/lorem-01.gif",
-        "width" : 640,
-        "height" : 320,
-        "title" : "Civic",
-        "artist" : "Honda",
-        "year" : 2020, 
-        "artist_id" : 1
-    },
-    "2": {
-        "id" : 2,
-        "url" : "assets/images/lorem-pixel/lorem-02.jpg",
-        "width" : 995,
-        "height" : 663,
-        "title" : "R8",
-        "artist" : "Audi",
-        "year" : 2017, 
-        "artist_id" : 0
-    },
-    "3": {
-        "id" : 3,
-        "url" : "assets/images/lorem-pixel/lorem-03.jpg",
-        "width" : 2000,
-        "height" : 1359,
-        "title" : "Veloster",
-        "artist" : "Hyundai",
-        "year" : 2016, 
-        "artist_id" : 0
-    },
-    "4": {
-        "id" : 4,
-        "url" : "assets/images/lorem-pixel/lorem-04.jpg",
-        "width" : 2000,
-        "height" : 5000,
-        "title" : "Sienna",
-        "artist" : "Toyota",
-        "year" : 2008, 
-        "artist_id" : 0
-    },
-    "5": {
-        "id" : 5,
-        "url" : "assets/images/lorem-pixel/lorem-05.jpg",
-        "width" : 2004,
-        "height" : 1229,
-        "title" : "Sonata",
-        "artist" : "Hyundai",
-        "year" : 2008, 
-        "artist_id" : 0
-    }
+  "0" : {
+    "id" : 0,
+    "url" : "assets/images/lorem-pixel/lorem-00.jpg",
+    "width" : 1057,
+    "height" : 1042,
+    "title" : "Odyssey",
+    "artist" : "Honda",
+    "year" : 2019,
+    "artist_id" : 0
+  },
+  "1" : {
+    "id" : 1,
+    "url" : "assets/images/lorem-pixel/lorem-01.gif",
+    "width" : 640,
+    "height" : 320,
+    "title" : "Civic",
+    "artist" : "Honda",
+    "year" : 2020,
+    "artist_id" : 1
+  },
+  "2" : {
+    "id" : 2,
+    "url" : "assets/images/lorem-pixel/lorem-02.jpg",
+    "width" : 995,
+    "height" : 663,
+    "title" : "R8",
+    "artist" : "Audi",
+    "year" : 2017,
+    "artist_id" : 0
+  },
+  "3" : {
+    "id" : 3,
+    "url" : "assets/images/lorem-pixel/lorem-03.jpg",
+    "width" : 2000,
+    "height" : 1359,
+    "title" : "Veloster",
+    "artist" : "Hyundai",
+    "year" : 2016,
+    "artist_id" : 0
+  },
+  "4" : {
+    "id" : 4,
+    "url" : "assets/images/lorem-pixel/lorem-04.jpg",
+    "width" : 2000,
+    "height" : 5000,
+    "title" : "Sienna",
+    "artist" : "Toyota",
+    "year" : 2008,
+    "artist_id" : 0
+  },
+  "5" : {
+    "id" : 5,
+    "url" : "assets/images/lorem-pixel/lorem-05.jpg",
+    "width" : 2004,
+    "height" : 1229,
+    "title" : "Sonata",
+    "artist" : "Hyundai",
+    "year" : 2008,
+    "artist_id" : 0
+  }
 }
