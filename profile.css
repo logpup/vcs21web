@@ -58,32 +58,14 @@
     font-family: SupplyLight;
 }
 
-.temp-gallery{
-    position: absolute;
-    top: 0;
-    right: 40vw;
-    width: 20%;
-}
-
 /* Left Div */
-.profile-menu-left{
-    width: 28vw;
-}
 
-.artistphoto-container{
-    height: 30%
-}
-
-.artistphoto{
-    width: 100%;
-}
-
-.artistinfo{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    
-    justify-content: center;
+.pp {
+    width: auto;
+    height: 10vh;
+    margin: 2vw;
+    border: 1px black solid;
+    border-radius: 1vw;
 }
 
 /* Artist Tables with Color */
