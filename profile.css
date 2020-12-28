@@ -54,36 +54,59 @@
     src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
 }
 
-* {
-    font-family: SupplyLight;
-}
-
-.temp-gallery{
-    position: absolute;
-    top: 0;
-    right: 40vw;
-    width: 20%;
-}
-
 /* Left Div */
-.profile-menu-left{
-    width: 28vw;
+
+.pp-container {
+    width: 21.5vw;
+    height: 30vh;
+    border-radius: 1vw;
+    margin: 1.25vh 1.5vw 1.25vh 1.5vw;
+    position: relative;
 }
 
-.artistphoto-container{
-    height: 30%
+.pp {
+    width: auto;
+    height: 95%;
+    border-radius: 1vw;
+    margin: .8vh .5vw 1vh .5vw;
 }
 
-.artistphoto{
-    width: 100%;
+.bio-container {
+    font-family: "SupplyReg";
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    right: -1vw;
+    top: 0;
+    font-size: 1.5vh;
 }
 
-.artistinfo{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    
-    justify-content: center;
+.bio-bubble {
+  border: 1px solid black;
+  border-radius: 1vh 1vw 1vh 1vw;     
+  padding: 1vh 2vw 1vh 2vw;
+  margin: 1vh;
+}
+
+.statement {
+    margin: 15px 5px 15px 5px;
+    padding: 10px 10px 10px 15px;
+    height: 20vh;
+    font-family: "SupplyReg";
+    font-size: 13px;
+    line-height: 18px;    
+    letter-spacing: -.8px;
+    border-style: solid;
+    border-width: thin thin thin 15px;
+    border-radius: 15px 0px 0px 15px;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+.statement:hover {
+    color: white;
+    background-color: deeppink;
+    box-shadow: 0px 0px 70px  deeppink;
 }
 
 /* Artist Tables with Color */

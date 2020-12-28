@@ -222,13 +222,14 @@
 
 /* VCS Seniors */
 
-/*
+
 .bottom-title {
     box-sizing: border-box;
     background-color: black;
     padding: 0px 10px 10px 10px;
     text-align: center;
     border-radius: 0px 00px 20px 20px;
+    margin-top: 7vh;
 }
 
 
@@ -244,7 +245,7 @@
     background-color: dodgerblue;
     color: blue;
 }
-*/
+
 
 /* title animation */
 
