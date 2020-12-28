@@ -93,7 +93,8 @@
 
 .artist-names td h2{
   color: white;
-  font-family: "MajorMono";
+  font-family: "Hatton";
+  width: 100%;
   font-size: 4vh;
   line-height: 3vh;    
   letter-spacing: -.8px;
