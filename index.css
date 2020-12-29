@@ -205,7 +205,7 @@
     padding: 10px 10px 10px 15px;
     height: 65%;
     font-family: "SupplyReg";
-    font-size: 13px;
+    font-size: 1.75vh;
     line-height: 18px;    
     letter-spacing: -.8px;
     border-style: solid;
@@ -222,7 +222,6 @@
 }
 
 /* VCS Seniors */
-
 
 .bottom-title {
     box-sizing: border-box;
@@ -256,7 +255,6 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    
 }
 
 .socials td{
@@ -304,14 +302,14 @@
 
 /* Artist Tables with Color */
 
-.nametable{
+/* .nametable{
     padding: 10vh 8vw 10vh 8vw;
     width: 100%;
     height: 100%;
     text-align: center;
-}
+} */
 
-.nametable td h1{
+/* .nametable td h1{
   color: black;
   font-family: "MajorMono";
   font-size: 2vh;
@@ -321,14 +319,13 @@
   border-width: thin thin .6vh thin;
   border-radius: 100px 100px 100px 100px;     
   padding: 1vh 2vw 1vh 2vw;
-}
+} */
 
-.blankname{
+/* .blankname{
     border: 0px;
-    
-}
+} */
 
-td h2{
+/* td h2{
   color: black;
   font-family: "SupplyReg";
   font-size: 13px;
@@ -338,10 +335,9 @@ td h2{
   border-width: thin 5px thin thin;
   border-radius: 20px 20px 20px 0px;
   padding: 10px;
-  
-}
+} */
 
-td h3{
+/* td h3{
   color: black;
   font-family: "SupplyReg";
   font-size: 13px;
@@ -350,7 +346,7 @@ td h3{
   border: 1px solid black;
   border-width: thin;
   padding: 10px; 
-}
+} */
 
 /* Naomi.html */
 
