@@ -202,11 +202,121 @@
   "20" : {
     "id" : 20,
     "url" : "assets/images/lorem-pixel/juliette05.jpg",
-    "width" : 5184,
-    "height" : 3456,
-    "title" : "Rosary for a Racecar",
+    "width" : 4032,
+    "height" : 3024,
+    "title" : "pulp a. MUJI",
     "artist" : "Juliette Nelson",
     "year" : 2014,
+    "artist_id" : 5
+  },
+  "21" : {
+    "id" : 21,
+    "url" : "assets/images/lorem-pixel/juliette06.CR2",
+    "width" : 5184,
+    "height" : 3456,
+    "title" : "Big File Gang",
+    "artist" : "Juliette Nelson",
+    "year" : 2020,
+    "artist_id" : 6
+  },
+  "22" : {
+    "id" : 22,
+    "url" : "assets/images/lorem-pixel/juliette07.jpg",
+    "width" : 3024,
+    "height" : 3024,
+    "title" : "pulp a. Gelsons",
+    "artist" : "Juliette Nelson",
+    "year" : 2001,
+    "artist_id" : 7
+  },
+  "23" : {
+    "id" : 23,
+    "url" : "assets/images/lorem-pixel/juliette08.jpg",
+    "width" : 4032,
+    "height" : 3024,
+    "title" : "pulp a. Orchard",
+    "artist" : "Juliette Nelson",
+    "year" : 2004,
+    "artist_id" : 8
+  },
+  "24" : {
+    "id" : 24,
+    "url" : "assets/images/lorem-pixel/juliette09.tif",
+    "width" : 3110,
+    "height" : 5184,
+    "title" : "Watering Plant Experiment No. 4",
+    "artist" : "Juliette Nelson",
+    "year" : 2019,
+    "artist_id" : 9
+  },
+  "25" : {
+    "id" : 25,
+    "url" : "assets/images/lorem-pixel/mina00.png",
+    "width" : 870,
+    "height" : 658,
+    "title" : "Looking at you looking at me",
+    "artist" : "Mina al Huquail",
+    "year" : 2020,
+    "artist_id" : 0
+  },
+  "26" : {
+    "id" : 26,
+    "url" : "assets/images/lorem-pixel/mina01.jpg",
+    "width" : 480,
+    "height" : 679,
+    "title" : "Black Christmas",
+    "artist" : "Mina al Huquail",
+    "year" : 2008,
+    "artist_id" : 1
+  },
+  "27" : {
+    "id" : 27,
+    "url" : "assets/images/lorem-pixel/mina02.jpg",
+    "width" : 1800,
+    "height" : 2400,
+    "title" : "Menoriatta",
+    "artist" : "Mina al Huquail",
+    "year" : 2018,
+    "artist_id" : 2
+  },
+  "28" : {
+    "id" : 28,
+    "url" : "assets/images/lorem-pixel/mina03.jpg",
+    "width" : 313,
+    "height" : 470,
+    "title" : "Duncan Trussel",
+    "artist" : "Mina al Huquail",
+    "year" : 2007,
+    "artist_id" : 3
+  },
+  "29" : {
+    "id" : 29,
+    "url" : "assets/images/lorem-pixel/mina04.jpg",
+    "width" : 2059,
+    "height" : 1146,
+    "title" : "Life Observed Still",
+    "artist" : "Mina al Huquail",
+    "year" : 2010,
     "artist_id" : 4
+  },
+  "30" : {
+    "id" : 30,
+    "url" : "assets/images/lorem-pixel/mina05.jpg",
+    "width" : 1024,
+    "height" : 732,
+    "title" : "Greasnthema",
+    "artist" : "Mina al Huquail",
+    "year" : 2009,
+    "artist_id" : 5
+  },
+  "31" : {
+    "id" : 31,
+    "url" : "assets/images/lorem-pixel/mina06.jpg",
+    "width" : 1200,
+    "height" : 900,
+    "title" : "What did you do at school?",
+    "artist" : "Mina al Huquail",
+    "year" : 2015,
+    "artist_id" : 6
   }
 }
