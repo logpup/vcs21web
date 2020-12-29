@@ -98,8 +98,8 @@
     padding: 10px 10px 10px 15px;
     height: 20vh;
     font-family: "SupplyReg";
-    font-size: 1.75;
-    line-height: 18px;    
+    font-size: 1.75vh;
+    line-height: 20px;    
     letter-spacing: -.8px;
     border-style: solid;
     border-width: thin thin thin 15px;
@@ -122,6 +122,11 @@
 #juliet:hover{
     background-color: darkblue;
     box-shadow: 0px 0px 70px  darkblue;
+}
+
+.statement.mina:hover{
+    background-color: red;
+    box-shadow: 0px 0px 70px red;
 }
 
 .profile-left-card{
@@ -240,7 +245,7 @@ td h3{
     height: 3vw;
 } */
 
-#profile-card {
+.profile-card {
     top: 1.5vh;
     /* border: 4px dashed black; */
     
@@ -264,7 +269,6 @@ td h3{
     height: 24vh;
     /* border: 2px dashed black; */
     border-radius: 20px;
-    background-color: pink;
     margin: 20px;
     text-align: center;
     line-height: 155px;
@@ -274,13 +278,13 @@ td h3{
 .grid-image{
 }
 
-#test {
+.gallery-item {
     background-color: white;
     border: 1.5px solid white;
     padding: 1vw;
 }
 
-#test:hover {
+.gallery-item:hover {
     cursor: pointer;
     opacity: 0.5;
     border: 1.5px solid black;
@@ -338,7 +342,7 @@ td h3{
 
 .pop-up-piece-description-container {
     text-align: right;
-    width: 15vw;
+    width: 10vw;
     height: 10vh;
     position: absolute;
     right: 0;
@@ -355,7 +359,7 @@ td h3{
     right: 0;
     top: 0;
     margin: .75vh .75vw 0 1vw;
-    padding: 0 .75vw 0 1vw;
+    padding: .9vh .75vw .75vh 1vw;
     color: lightgrey;
 }
 
