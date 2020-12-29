@@ -240,8 +240,8 @@ td h3{
 }
 
 .grid-gallery > div {
-    width: 150px;
-    height: 150px;
+    width: 12vw;
+    height: 24vh;
     /* border: 2px dashed black; */
     border-radius: 20px;
     background-color: pink;
@@ -252,8 +252,6 @@ td h3{
 }
 
 .grid-image{
-    width: 100%;
-    height: auto;
 }
 
 #test {
