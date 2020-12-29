@@ -90,6 +90,22 @@
   border-radius: 200px 200px 100px 100px;     
   padding: 1vh 2vw 1vh 2vw;
 }
+
+.artist-names td h2{
+  color: white;
+  font-family: "Hatton";
+  width: 100%;
+  font-size: 4vh;
+  line-height: 3vh;    
+  letter-spacing: -.8px;
+  border: 0px;
+  border-width: thin thin thin thin;
+  border-radius: 0px 0px 0px 0px;     
+  padding: 3vh 1.5vw 2.7vh 1.5vw;
+  background-color: black;
+  margin-left: 1vw;
+}
+
 /* Name Hover Color*/
 
 .artist-names .name1 h1:hover{
