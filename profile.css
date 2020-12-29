@@ -109,6 +109,16 @@
     box-shadow: 0px 0px 70px  deeppink;
 }
 
+#jay:hover{
+    background-color: blueviolet;
+    box-shadow: 0px 0px 70px  blueviolet;
+}
+
+#juliet:hover{
+    background-color: darkblue;
+    box-shadow: 0px 0px 70px  darkblue;
+}
+
 /* Artist Tables with Color */
 
 .nametable{
