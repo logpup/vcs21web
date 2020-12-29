@@ -248,11 +248,15 @@ td h3{
 
 #test {
     background-color: white;
-    border: none;
+    border: 1.5px solid white;
+    padding: 1vw;
 }
 
 #test:hover {
     cursor: pointer;
+    opacity: 0.5;
+    border: 1.5px solid black;
+    border-radius: 1vw;
 }
 
 .gallery-pop-up-container {
@@ -313,7 +317,8 @@ td h3{
     bottom: 0;
     margin: 1vw;
     padding: 1vw;
-    font-size: 2.25vh
+    font-size: 2.25vh;
+    font-family: "SupplyLight";
 }
 
 .cross {

@@ -1,62 +1,322 @@
 {
   "0" : {
     "id" : 0,
-    "url" : "assets/images/lorem-pixel/lorem-00.jpg",
+    "url" : "assets/images/lorem-pixel/jay00.jpg",
     "width" : 1057,
     "height" : 1042,
-    "title" : "Odyssey",
-    "artist" : "Honda",
+    "title" : "Osarin Atsuko",
+    "artist" : "Jay Park",
     "year" : 2019,
     "artist_id" : 0
   },
   "1" : {
     "id" : 1,
-    "url" : "assets/images/lorem-pixel/lorem-01.gif",
+    "url" : "assets/images/lorem-pixel/jay01.gif",
     "width" : 640,
     "height" : 320,
-    "title" : "Civic",
-    "artist" : "Honda",
+    "title" : "Drumming for Rain",
+    "artist" : "Jay Park",
     "year" : 2020,
     "artist_id" : 1
   },
   "2" : {
     "id" : 2,
-    "url" : "assets/images/lorem-pixel/lorem-02.jpg",
+    "url" : "assets/images/lorem-pixel/jay02.jpg",
     "width" : 995,
     "height" : 663,
-    "title" : "R8",
-    "artist" : "Audi",
+    "title" : "Hello Dear",
+    "artist" : "Jay Park",
     "year" : 2017,
-    "artist_id" : 0
+    "artist_id" : 2
   },
   "3" : {
     "id" : 3,
-    "url" : "assets/images/lorem-pixel/lorem-03.jpg",
+    "url" : "assets/images/lorem-pixel/jay03.jpg",
     "width" : 2000,
     "height" : 1359,
-    "title" : "Veloster",
-    "artist" : "Hyundai",
+    "title" : "HAWRAF Sample",
+    "artist" : "Jay Park",
     "year" : 2016,
-    "artist_id" : 0
+    "artist_id" : 3
   },
   "4" : {
     "id" : 4,
-    "url" : "assets/images/lorem-pixel/lorem-04.jpg",
-    "width" : 2000,
-    "height" : 5000,
-    "title" : "Sienna",
-    "artist" : "Toyota",
+    "url" : "assets/images/lorem-pixel/jay04.jpg",
+    "width" : 1000,
+    "height" : 1498,
+    "title" : "Graph Human Cycle",
+    "artist" : "Jay Park",
     "year" : 2008,
-    "artist_id" : 0
+    "artist_id" : 4
   },
   "5" : {
     "id" : 5,
-    "url" : "assets/images/lorem-pixel/lorem-05.jpg",
-    "width" : 2004,
-    "height" : 1229,
-    "title" : "Sonata",
-    "artist" : "Hyundai",
+    "url" : "assets/images/lorem-pixel/jay05.jpeg",
+    "width" : 1100,
+    "height" : 1522,
+    "title" : "Good to See You Too",
+    "artist" : "Jay Park",
     "year" : 2008,
+    "artist_id" : 5
+  },
+  "6" : {
+    "id" : 6,
+    "url" : "assets/images/lorem-pixel/jay06.jpeg",
+    "width" : 275,
+    "height" : 183,
+    "title" : "I can restart your computer",
+    "artist" : "Jay Park",
+    "year" : 2006,
+    "artist_id" : 6
+  },
+  "7" : {
+    "id" : 7,
+    "url" : "assets/images/lorem-pixel/julia00.jpg",
+    "width" : 3024,
+    "height" : 4032,
+    "title" : "Stiched in Seam",
+    "artist" : "Julia Colettes",
+    "year" : 2009,
     "artist_id" : 0
+  },
+  "8" : {
+    "id" : 8,
+    "url" : "assets/images/lorem-pixel/julia01.jpg",
+    "width" : 3024,
+    "height" : 3024,
+    "title" : "DeadRats",
+    "artist" : "Julia Colettes",
+    "year" : 2020,
+    "artist_id" : 1
+  },
+  "9" : {
+    "id" : 9,
+    "url" : "assets/images/lorem-pixel/julia02.jpg",
+    "width" : 3900,
+    "height" : 900,
+    "title" : "Hümblenwid Waste",
+    "artist" : "Julia Colettes",
+    "year" : 2017,
+    "artist_id" : 2
+  },
+  "10" : {
+    "id" : 10,
+    "url" : "assets/images/lorem-pixel/julia03.jpg",
+    "width" : 2328,
+    "height" : 2327,
+    "title" : "Cumberland",
+    "artist" : "Julia Colettes",
+    "year" : 2018,
+    "artist_id" : 3
+  },
+  "11" : {
+    "id" : 11,
+    "url" : "assets/images/lorem-pixel/julia04.jpg",
+    "width" : 1064,
+    "height" : 1404,
+    "title" : "You're Next",
+    "artist" : "Julia Colettes",
+    "year" : 2020,
+    "artist_id" : 4
+  },
+  "12" : {
+    "id" : 12,
+    "url" : "assets/images/lorem-pixel/julia05.jpg",
+    "width" : 512,
+    "height" : 288,
+    "title" : "Crayola, sharpie... ticonderoga",
+    "artist" : "Julia Colettes",
+    "year" : 2000,
+    "artist_id" : 5
+  },
+  "13" : {
+    "id" : 13,
+    "url" : "assets/images/lorem-pixel/julia06.jpg",
+    "width" : 709,
+    "height" : 800,
+    "title" : "Jaon o' Car",
+    "artist" : "Julia Colettes",
+    "year" : 2001,
+    "artist_id" : 6
+  },
+  "14" : {
+    "id" : 14,
+    "url" : "assets/images/lorem-pixel/juliette00.jpg",
+    "width" : 5184,
+    "height" : 5184,
+    "title" : "Jaon o' Car",
+    "artist" : "Juliette Nelson",
+    "year" : 2001,
+    "artist_id" : 0
+  },
+  "15" : {
+    "id" : 15,
+    "url" : "assets/images/lorem-pixel/juliette00.jpg",
+    "width" : 5184,
+    "height" : 5184,
+    "title" : "Delphiné Nosotros",
+    "artist" : "Juliette Nelson",
+    "year" : 2001,
+    "artist_id" : 1
+  },
+  "16" : {
+    "id" : 16,
+    "url" : "assets/images/lorem-pixel/juliette01.jpg",
+    "width" : 5184,
+    "height" : 3456,
+    "title" : "Selenium",
+    "artist" : "Juliette Nelson",
+    "year" : 2001,
+    "artist_id" : 1
+  },
+  "17" : {
+    "id" : 17,
+    "url" : "assets/images/lorem-pixel/juliette02.jpg",
+    "width" : 5184,
+    "height" : 3456,
+    "title" : "Selenium",
+    "artist" : "Juliette Nelson",
+    "year" : 2011,
+    "artist_id" : 2
+  },
+  "18" : {
+    "id" : 18,
+    "url" : "assets/images/lorem-pixel/juliette03.jpg",
+    "width" : 5184,
+    "height" : 3456,
+    "title" : "Mustart Ballon Left Me Yesterday",
+    "artist" : "Juliette Nelson",
+    "year" : 2018,
+    "artist_id" : 3
+  },
+  "19" : {
+    "id" : 19,
+    "url" : "assets/images/lorem-pixel/juliette04.jpg",
+    "width" : 3024,
+    "height" : 4032,
+    "title" : "Rosary for a Racecar",
+    "artist" : "Juliette Nelson",
+    "year" : 2014,
+    "artist_id" : 4
+  },
+  "20" : {
+    "id" : 20,
+    "url" : "assets/images/lorem-pixel/juliette05.jpg",
+    "width" : 4032,
+    "height" : 3024,
+    "title" : "pulp a. MUJI",
+    "artist" : "Juliette Nelson",
+    "year" : 2014,
+    "artist_id" : 5
+  },
+  "21" : {
+    "id" : 21,
+    "url" : "assets/images/lorem-pixel/juliette06.CR2",
+    "width" : 5184,
+    "height" : 3456,
+    "title" : "Big File Gang",
+    "artist" : "Juliette Nelson",
+    "year" : 2020,
+    "artist_id" : 6
+  },
+  "22" : {
+    "id" : 22,
+    "url" : "assets/images/lorem-pixel/juliette07.jpg",
+    "width" : 3024,
+    "height" : 3024,
+    "title" : "pulp a. Gelsons",
+    "artist" : "Juliette Nelson",
+    "year" : 2001,
+    "artist_id" : 7
+  },
+  "23" : {
+    "id" : 23,
+    "url" : "assets/images/lorem-pixel/juliette08.jpg",
+    "width" : 4032,
+    "height" : 3024,
+    "title" : "pulp a. Orchard",
+    "artist" : "Juliette Nelson",
+    "year" : 2004,
+    "artist_id" : 8
+  },
+  "24" : {
+    "id" : 24,
+    "url" : "assets/images/lorem-pixel/juliette09.tif",
+    "width" : 3110,
+    "height" : 5184,
+    "title" : "Watering Plant Experiment No. 4",
+    "artist" : "Juliette Nelson",
+    "year" : 2019,
+    "artist_id" : 9
+  },
+  "25" : {
+    "id" : 25,
+    "url" : "assets/images/lorem-pixel/mina00.png",
+    "width" : 870,
+    "height" : 658,
+    "title" : "Looking at you looking at me",
+    "artist" : "Mina al Huquail",
+    "year" : 2020,
+    "artist_id" : 0
+  },
+  "26" : {
+    "id" : 26,
+    "url" : "assets/images/lorem-pixel/mina01.jpg",
+    "width" : 480,
+    "height" : 679,
+    "title" : "Black Christmas",
+    "artist" : "Mina al Huquail",
+    "year" : 2008,
+    "artist_id" : 1
+  },
+  "27" : {
+    "id" : 27,
+    "url" : "assets/images/lorem-pixel/mina02.jpg",
+    "width" : 1800,
+    "height" : 2400,
+    "title" : "Menoriatta",
+    "artist" : "Mina al Huquail",
+    "year" : 2018,
+    "artist_id" : 2
+  },
+  "28" : {
+    "id" : 28,
+    "url" : "assets/images/lorem-pixel/mina03.jpg",
+    "width" : 313,
+    "height" : 470,
+    "title" : "Duncan Trussel",
+    "artist" : "Mina al Huquail",
+    "year" : 2007,
+    "artist_id" : 3
+  },
+  "29" : {
+    "id" : 29,
+    "url" : "assets/images/lorem-pixel/mina04.jpg",
+    "width" : 2059,
+    "height" : 1146,
+    "title" : "Life Observed Still",
+    "artist" : "Mina al Huquail",
+    "year" : 2010,
+    "artist_id" : 4
+  },
+  "30" : {
+    "id" : 30,
+    "url" : "assets/images/lorem-pixel/mina05.jpg",
+    "width" : 1024,
+    "height" : 732,
+    "title" : "Greasnthema",
+    "artist" : "Mina al Huquail",
+    "year" : 2009,
+    "artist_id" : 5
+  },
+  "31" : {
+    "id" : 31,
+    "url" : "assets/images/lorem-pixel/mina06.jpg",
+    "width" : 1200,
+    "height" : 900,
+    "title" : "What did you do at school?",
+    "artist" : "Mina al Huquail",
+    "year" : 2015,
+    "artist_id" : 6
   }
 }
