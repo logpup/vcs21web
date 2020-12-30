@@ -57,28 +57,31 @@ canvas {
 
 .showtitle{
     text-align: center;
-    margin-top: 100px;
-  
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 10px;
 }
 
 .showtitle h1{
     font-family: "Syne";
-    font-size: 5vw;
+    font-size: 5vw;   
 }
 
 .masthead{
-    margin: 20vh 25vw 20vh 25vw;
-    
+    padding: 20vh 25vw 20vh 25vw;
+    background-color: darkslategrey
 }
 
 .masthead p{
     font-family: "Syne";
     font-size: 18px;
     line-height: 24px;
+    color: white;
 }
 
 .students{
     text-align: center;
+    padding-top: 20vh;
 }
 
 .students h1{
