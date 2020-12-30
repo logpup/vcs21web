@@ -1,11 +1,16 @@
 $(document).ready(function(){
-    // Artist Name Hover
-    $("div").mouseover(function(){
-        $("p").css("color", "red");
-    });
-})
 
-$(document).ready(function(){
+    $(document).ready(function(){
+        // title hover function
+        $(".name1").mouseover(
+            function() {
+                $("body").css("background-color", "red");
+            })
+        .mouseout(function(){
+            $("body").css("background-color", "white");
+        })
+    })
+
     // JSON Call Test
     
     $.getJSON("js/json/lorem.json", function(data) {
