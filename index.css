@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .content {
@@ -65,95 +66,9 @@
 
 /* 3dream sprial */
 
-.home-top{
-    float: left;
-    width: 100vw;
-    height: 11.5vh;
-    background-color: whitesmoke;
-}
-
-.artist-names{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding: 10px;
-}
-
-.artist-names td h1{
-  color: black;
-  font-family: "MajorMono";
-  font-size: 2vh;
-  line-height: 3vh;    
-  letter-spacing: -.8px;
-  border: 1px solid black;
-  border-width: thin thin .6vh thin;
-  border-radius: 200px 200px 100px 100px;     
-  padding: 1vh 2vw 1vh 2vw;
-}
-
-.artist-names td h2{
-  color: white;
-  font-family: "Hatton";
-  width: 100%;
-  font-size: 4vh;
-  line-height: 3vh;    
-  letter-spacing: -.8px;
-  border: 0px;
-  border-width: thin thin thin thin;
-  border-radius: 0px 0px 0px 0px;     
-  padding: 3vh 1.5vw 2.7vh 1.5vw;
-  background-color: black;
-  margin-left: 1vw;
-}
-
-/* Name Hover Color*/
-
-.artist-names .name1 h1:hover{
-    background-color: red;
-    box-shadow: 0px 0px 80px rgba(250,0,0,1);
-    color: white;
-    z-index: 9;
-}
-
-.artist-names .name2 h1:hover{
-    background-color: darkorange;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(250,120,0,1);
-    z-index: 9999;
-}
-
-.artist-names .name3 h1:hover{
-    background-color: goldenrod;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(100,110,0,1);
-}
-
-.artist-names .name4 h1:hover{
-    background-color: green;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(0,250,0,1);
-}
-
-.artist-names .name5 h1:hover{
-    background-color: darkblue;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(60,0,255,1);
-}
-
-.artist-names .name6 h1:hover{
-    background-color: blueviolet;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(130,0,255,1);
-}
-
-.artist-names .name7 h1:hover{
-    background-color: deeppink;
-    color: white;
-    box-shadow: 0px 0px 80px rgba(220,0,255,1);
-}
-
 .home-left{
-    float: left;
+    position: absolute;
+    left: 0px;
     width: 25vw;
     height: 85vh;
     display: flex;
@@ -162,19 +77,22 @@
 }
 
 .home-right{
-    float: left;
-    width: 70vw;
+
+    position: absolute;
+    right: 0px;
+    width: 72vw;
     height: 85vh;
     display: flex;
     flex-direction: column;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
+
 
 .card{
     width: 100%;
     height: 100%;
     border-style: solid;
-    border-width: thin thin thin thin;
+    border-width: 1px 1px 1px 1px;
     border-radius: 20px 20px 20px 20px;
     border-color: black;
 }
@@ -289,15 +207,103 @@
     
 }
 
-.home-gallery-right { 
-    float: left;
-    height: 100vh;
-    width: 70vw;
-    z-index: 999;
+/* FOOTER */
+
+.home-bottom{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 11vh;
+    background-color: whitesmoke;
+    padding: 0px 0px 10px 0px;
+}
+
+.artist-names{
+    float:left;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 64vw;
+}
+
+.artist-names td h1{
+  color: black;
+  font-family: "MajorMono";
+  font-size: 2vh;
+  line-height: 3vh;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin thin .6vh thin;
+  border-radius: 200px 200px 100px 100px;     
+  padding: 1vh 2vw 1vh 2vw;
+}
+
+.VCSButton{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.VCSbutton h1{
+  color: white;
+  font-family: "Hatton";
+  width: 100%;
+  font-size: 4vh;
+  line-height: 3vh;    
+  border: 0px;
+  border-width: thin thin thin thin;
+  border-radius: 0px 0px 0px 0px;     
+  background-color: black;
+  padding: 20px;
+}
+
+/* Name Hover Color*/
+
+.artist-names .name1 h1:hover{
+    background-color: red;
+    box-shadow: 0px 0px 80px rgba(250,0,0,1);
+    color: white;
+    z-index: 9;
+}
+
+.artist-names .name2 h1:hover{
+    background-color: darkorange;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(250,120,0,1);
+    z-index: 9999;
+}
+
+.artist-names .name3 h1:hover{
+    background-color: goldenrod;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(100,110,0,1);
+}
+
+.artist-names .name4 h1:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(0,250,0,1);
+}
+
+.artist-names .name5 h1:hover{
+    background-color: darkblue;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(60,0,255,1);
+}
+
+.artist-names .name6 h1:hover{
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(130,0,255,1);
+}
+
+.artist-names .name7 h1:hover{
+    background-color: deeppink;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(220,0,255,1);
 }
 
 /* Artist Tables with Color */
