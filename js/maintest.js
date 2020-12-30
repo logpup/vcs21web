@@ -57,13 +57,13 @@ function init() {
     ring1 = gltf.scene;
     animate();
   });
-     
   
 }
 
 
 function animate() {
-  
+
+  grid.position.y = -10;
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
@@ -80,3 +80,4 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize);
+
