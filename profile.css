@@ -265,8 +265,8 @@ td h3{
 }
 
 .grid-gallery > div {
-    width: 12vw;
-    height: 24vh;
+    width: 30vw;
+    height: 60vh;
     /* border: 2px dashed black; */
     border-radius: 20px;
     text-align: center;
