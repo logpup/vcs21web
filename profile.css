@@ -61,40 +61,44 @@
 
 /* Left Div */
 
+.home-left{
+    float: left;
+    width: 25vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
 .pp-container {
-    width: 21.5vw;
-    height: 30vh;
-    border-radius: 1vw;
-    margin: 1.25vh 1.5vw 1.25vh 1.5vw;
-    position: relative;
+    height: 38vh;
+    border-radius: 20px;
 }
 
 .pp {
-    width: auto;
-    height: 95%;
-    border-radius: 1vw;
-    margin: .8vh .5vw 1vh .5vw;
+    float: left;
+    height: 100%;
+    padding: 10px;
 }
 
 .bio-container {
+    float: left;
     font-family: "SupplyReg";
-    width: 10vw;
-    height: 10vh;
-    position: absolute;
-    right: -1vw;
-    top: 0;
-    font-size: 1.5vh;
+    font-size: 11px;
+    width: 35%;
+    text-align: center;
 }
 
 .bio-bubble {
   border: 1px solid black;
-  border-radius: 1vh 1vw 1vh 1vw;     
-  padding: 1vh 2vw 1vh 2vw;
-  margin: 1vh;
+  border-radius: 5px 5px 5px 5px;    
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
 }
 
 .statement {
-    margin: 15px 5px 15px 5px;
+    margin: 25px 10px 15px 10px;
     padding: 10px 10px 10px 15px;
     height: 20vh;
     font-family: "SupplyReg";
