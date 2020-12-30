@@ -221,12 +221,9 @@
 
 .artist-names{
     float:left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 10px;
-    width: 64vw;
+    width: 64%;
 }
 
 .artist-names td h1{
@@ -241,21 +238,18 @@
   padding: 1vh 2vw 1vh 2vw;
 }
 
-.VCSButton{
+.VCSbutton{
     float: left;
-    height: 100%;
-    width: 100%;
+    text-align: center;
+    width: 35%;
+    height:100%;
 }
 
 .VCSbutton h1{
   color: white;
   font-family: "Hatton";
   width: 100%;
-  font-size: 4vh;
-  line-height: 3vh;    
-  border: 0px;
-  border-width: thin thin thin thin;
-  border-radius: 0px 0px 0px 0px;     
+  font-size: 4vh;     
   background-color: black;
   padding: 20px;
 }
