@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    cursor: crosshair;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.spacer{
+    float: left;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: inline-block;
+}
+
+.main{
+    float: left;
+    top: 100vh;
+    width: 100vw;
+    display: inline-block;
+}
+
+.showtitle{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.showtitle h1{
+    font-family: "Syne";
+    font-size: 5vw;
+}
+
+.masthead{
+   
+    margin: 30px 650px 30px 650px;
+    
+}
+
+.masthead p{
+    font-family: "Syne";
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.students{
+    text-align: center;
+}
+
+.students h1{
+    font-family: "Syne";
+    font-size: 5vw;
+}
+
+.container-box{
+    width: 100%;
+    height: 80vh;
+}
+
+.student-box {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+}
+
+.student-box img {
+    max-width: 50%;
+    box-shadow: 0px 0px 80px rgba(250,0,0,0.4);
+}
+
+.student-box h2 {
+    font-size: 50px;
+    font-family: "Syne";
+}
+
+.student-box h3 {
+    font-size: 24px;
+    font-family: "Syne";
+}
+
+.spacer-box {
+    background-color: lawngreen;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
