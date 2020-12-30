@@ -4,10 +4,10 @@ $(document).ready(function(){
         // title hover function
         $(".name1").mouseover(
             function() {
-                $("body").css("background-color", "red");
+                $(".home-title").css("background-color", "red");
             })
         .mouseout(function(){
-            $("body").css("background-color", "white");
+            $(".home-title").css("background-color", "black");
         })
     })
 
