@@ -4,33 +4,33 @@ let container;
 let camera;
 let renderer;
 let scene;
-let house;
 
 function init() {
   container = document.querySelector(".scene");
 
   //Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color('#17ddeb');
+  scene.background = new THREE.Color('#aaed4c');
 
   //Camera setup    
   const fov = 35;
-  const aspect = container.clientWidth * .74/ container.clientHeight;
+  const aspect = container.clientWidth * 1.0/ container.clientHeight;
   const near = 0.1;
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0, 80);
+  camera.position.set(0, 0, 25);
   
   //GridVis
     
-    const size = 100;
-    const divisions = 100;
+    const size = 10;
+    const divisions = 10;
     const colorGrid = '#28d155';
 
     const gridHelper = new THREE.GridHelper( size, divisions, colorGrid );
     scene.add( gridHelper );
     grid = gridHelper;
+    gridHelper.rotation.set(50, 250, 100);
  
       
     
@@ -44,7 +44,7 @@ function init() {
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  renderer.setSize(container.clientWidth * .74, container.clientHeight * 1.0);
+  renderer.setSize(container.clientWidth * 1.0, container.clientHeight * 1.0);
   renderer.setPixelRatio(window.devicePixelRatio);
 
   container.appendChild(renderer.domElement);
@@ -58,12 +58,15 @@ function init() {
     animate();
   });
      
-  
+
 }
 
 
 function animate() {
   
+  ring1.rotation.z += .01;
+  ring1.rotation.y += .01;
+    
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
@@ -73,10 +76,10 @@ function animate() {
 init();
 
 function onWindowResize() {
-  camera.aspect = container.clientWidth * .74/ container.clientHeight;
+  camera.aspect = container.clientWidth * 1.0/ container.clientHeight;
   camera.updateProjectionMatrix();
 
-  renderer.setSize(container.clientWidth * .74, container.clientHeight);
+  renderer.setSize(container.clientWidth * 1.0, container.clientHeight);
 }
 
 window.addEventListener("resize", onWindowResize);
