@@ -1,3 +1,61 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Helvetica Light";
+    src:  url("fonts/helvetica/helvetica-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Cirka;
+    src: url("fonts/Cirka-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url("fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url("fonts/NeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueWorld;
+    src: url("fonts/NeueWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hatton;
+    src: url("assets/fonts/Hatton-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyReg;
+    src: url("fonts/Supply-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyLight;
+    src: url("fonts/Supply-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FormulaCond;
+    src: url("fonts/FormulaCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MajorMono;
+    src: url("fonts/MajorMono-Regular.ttf") format("truetype");
+}
+
+/* BODY */
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +72,8 @@ body{
     margin: 0;
 }
 
+/* THREE JS APPENDCHILD */
+
 .scene,
 canvas {
   position: fixed;
@@ -21,6 +81,8 @@ canvas {
   height: 100%;
   z-index: -1;
 }
+
+/* THE SHOW TITLE THAT MOVES DOWN */
 
 .topnav{
     position: fixed;
@@ -34,9 +96,9 @@ canvas {
 }
 
 .topnav h1{
-    font-family: "Syne";
-    font-size: 4vw;
-    padding: 0px 33vw 0px 33vw
+    font-family: "Hatton";
+    font-size: 2vw;
+    padding: 0px 40vw 0px 40vw
 }
 
 .spacer{
@@ -59,12 +121,14 @@ canvas {
     text-align: center;
     position: sticky;
     position: -webkit-sticky; /* Safari */
-    top: 10px;
+    top: 0px;
+    background-color: white;
+    padding: 10px 0px 15px 0px;
 }
 
 .showtitle h1{
-    font-family: "Syne";
-    font-size: 5vw;   
+    font-family: "MajorMono";
+    font-size: 3vw;   
 }
 
 .masthead{
@@ -73,8 +137,8 @@ canvas {
 }
 
 .masthead p{
-    font-family: "Syne";
-    font-size: 18px;
+    font-family: "helvetica";
+    font-size: 15px;
     line-height: 24px;
     color: white;
 }
