@@ -134,8 +134,8 @@ canvas {
 .masthead{
     padding: 20vh 25vw 20vh 25vw;
     background: radial-gradient(circle, rgba(255,0,202,1) 0%, rgba(236,10,10,1) 4%, rgba(255,235,0,1) 24%, rgba(2,191,8,1) 39%, rgba(8,182,175,1) 83%, rgba(34,23,246,1) 100%);
-	background-size: 400% 400%;
-	animation: gradient 25s ease-in-out infinite;
+	background-size: 800% 800%;
+	animation: gradient 35s ease-in-out infinite;
 }
 
 @keyframes gradient {
