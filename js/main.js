@@ -57,16 +57,55 @@ function init() {
     ring1 = gltf.scene;
     animate();
   });
-     
+    
+   loader.load("obj/ring2.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    ring2 = gltf.scene;
+    animate();
+  });
+    
+   loader.load("obj/ring3.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    ring3 = gltf.scene;
+    animate();
+  });
+    
+   loader.load("obj/ring4.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    ring4 = gltf.scene;
+    animate();
+  });
+  
+   loader.load("obj/ring5.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    ring5 = gltf.scene;
+    animate();
+  });
+    
+   loader.load("obj/ring6.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    ring6 = gltf.scene;
+    animate();
+  });
+          
 
 }
 
 
 function animate() {
   
-  ring1.rotation.z += .01;
-  ring1.rotation.y += .01;
-    
+  ring1.rotation.z += .001;
+  ring1.rotation.y += .001;
+  ring2.rotation.z += .002;
+  ring2.rotation.y += .002;
+  ring3.rotation.z += .003;
+  ring3.rotation.y += .003;
+  ring4.rotation.z += .004;
+  ring4.rotation.y += .004;
+  ring5.rotation.z += .005;
+  ring5.rotation.y += .005; 
+  ring6.rotation.z += .01;
+  ring6.rotation.y += .01;    
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
