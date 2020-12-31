@@ -223,6 +223,7 @@ canvas {
 .students h2{
     font-family: "GT-Haptic-Light-Rotalic";
     font-size: 2vw;
+    letter-spacing: 2px;
 }
 
 .container-box{
