@@ -5,3 +5,33 @@
     line-height: 19px;
     color: black;
 }
+
+.student-box-1 .popupbox{
+    position: absolute;
+    max-height: 45%;
+    width: 35%;
+    left: 50vw;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px 0px     0px 20px;
+    transform: scaleX(0);
+    padding:  20px;
+    transform-origin: left;
+    transition: 0.1s;
+    transform-style: preserve-3d;
+    z-index: 0;
+    overflow-y: scroll;
+}
+
+.student-box-1 .popupbox p{
+    font-family: "Apercu-Light";
+    /* font-family: "helvetica"; */
+    font-size: 13.5px;
+    line-height: 21px;
+}
+
+.student-box-1:hover .popupbox{
+    transform: scaleX(1);
+    z-index: 1;
+}
