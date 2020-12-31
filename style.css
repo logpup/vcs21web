@@ -251,12 +251,14 @@ canvas {
     font-family: "GT-Haptic-Bold";
     font-weight: 400;
     padding: 20px 0px 0px 0px;
+    text-decoration: none;
 }
 
 .student-box-1 h3 {
     font-size: 24px;
     font-family: "GT-Haptic-Light-Rotalic";
     letter-spacing: 2.5px;
+    text-decoration: none;
 }
 
 .spacer-box-1 {
