@@ -54,6 +54,43 @@
     src: url("fonts/MajorMono-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Apercu-Light;
+    src: url("fonts/Apercu-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Mad Serif nofill;
+    src: url("fonts/mad-serif-bold.ttf") format("opentype");
+}
+
+@font-face {font-family: "MAD Serif"; src: url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.eot"); src: url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.woff") format("woff"), url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/20e458bc0608b78f9d5572744c730fa2.svg#MAD Serif") format("svg"); } 
+
+@font-face {
+    font-family: GT-Haptic-Bold;
+    src: url("fonts/GT-Haptik-Bold-Trial.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GT-Haptic-Medium;
+    src: url("fonts/GT-Haptik-Medium-Trial.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GT-Haptic-Light-Rotalic;
+    src: url("fonts/GT-Haptik-Light-Rotalic-Trial.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Beatrice-Display;
+    src: url("fonts/BeatriceDisplay-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Beatrice;
+    src: url("fonts/Beatrice-Semibold.otf") format("opentype");
+}
+
 /* BODY */
 
 *{
@@ -96,9 +133,9 @@ canvas {
 }
 
 .topnav h1{
-    font-family: "Hatton";
-    font-size: 2vw;
-    padding: 0px 40vw 0px 40vw
+    font-family: "Beatrice";
+    font-size: 1.5vw;
+    padding: 0px 42vw 0px 42vw
 }
 
 .spacer{
@@ -127,13 +164,13 @@ canvas {
 }
 
 .showtitle h1{
-    font-family: "MajorMono";
+    font-family: "Beatrice-Display";
     font-size: 3vw;   
 }
 
 .masthead{
-    padding: 20vh 25vw 20vh 25vw;
-    background: radial-gradient(circle, rgba(255,0,202,1) 0%, rgba(236,10,10,1) 4%, rgba(255,235,0,1) 24%, rgba(2,191,8,1) 39%, rgba(8,182,175,1) 83%, rgba(34,23,246,1) 100%);
+    padding: 20vh 33vw 20vh 33vw;
+    background: radial-gradient(circle, rgba(255,30,30,1) 0%, rgba(255,137,0,1) 18%, rgba(171,158,40,1) 37%, rgba(105,147,50,1) 61%, rgba(72,105,156,1) 82%, rgba(149,111,134,1) 100%);
 	background-size: 800% 800%;
 	animation: gradient 35s ease-in-out infinite;
 }
@@ -150,27 +187,47 @@ canvas {
 	}
 }
 
+@keyframes textcolor {
+	0% {
+		color: rgba(0,0,0, 1.0);
+	}
+	50% {
+		color: rgba(0,0,0, 0.1);
+	}
+	100% {
+		color: rgba(0,0,0, 1.0);
+	}
+}
+
 .masthead p{
-    font-family: "helvetica";
-    font-size: 15px;
-    line-height: 24px;
+    font-family: "Apercu-Light";
+    /* font-family: "helvetica"; */
+    font-size: 12px;
+    line-height: 19px;
     color: white;
+    animation: textcolor 17.5s infinite;
 }
 
 .students{
     text-align: center;
     padding-top: 20vh;
+    background-color: transparent;
 }
 
 .students h1{
-    font-family: "Syne";
-    font-size: 5vw;
+    font-family: "GT-Haptic-Bold";
+    font-size: 4vw;
+}
+
+.students h2{
+    font-family: "GT-Haptic-Light-Rotalic";
+    font-size: 2vw;
 }
 
 .container-box{
     width: 100%;
     height: 80vh;
-    margin-top: 30vh;
+    margin: 15vh 0vh 15vh 0vh;
 }
 
 .student-box-1 {
@@ -191,12 +248,15 @@ canvas {
 
 .student-box-1 h2 {
     font-size: 50px;
-    font-family: "Syne";
+    font-family: "GT-Haptic-Bold";
+    font-weight: 400;
+    padding: 20px 0px 0px 0px;
 }
 
 .student-box-1 h3 {
     font-size: 24px;
-    font-family: "Syne";
+    font-family: "GT-Haptic-Light-Rotalic";
+    letter-spacing: 2.5px;
 }
 
 .spacer-box-1 {
@@ -223,12 +283,16 @@ canvas {
 
 .student-box-2 h2 {
     font-size: 50px;
-    font-family: "Syne";
+    font-family: "GT-Haptic-Bold";
+    font-weight: 400;
+    padding: 20px 0px 0px 0px;
+    
 }
 
 .student-box-2 h3 {
     font-size: 24px;
-    font-family: "Syne";
+    font-family: "GT-Haptic-Light-Rotalic";
+    letter-spacing: 2.5px;
 }
 
 .spacer-box-2 {
@@ -256,14 +320,15 @@ canvas {
 
 .footer h1{
     color: white;
-    font-family: "Syne";
+    font-family: "GT-Haptic-Medium";
+    letter-spacing: 3px;
+    font-weight: 100;
     font-size: 30px;
 }
 
 .footer img {
     width: 6%;
 }
-
 
 
 
