@@ -14,11 +14,11 @@
     background-color: white;
     border-style: solid;
     border-width: thin;
-    border-radius: 20px 0px     0px 20px;
+    border-radius: 20px 0px 0px 20px;
     transform: scaleX(0);
     padding:  20px;
     transform-origin: left;
-    transition: 0.1s;
+    transition: 0.3s;
     transform-style: preserve-3d;
     z-index: 0;
     overflow-y: scroll;
