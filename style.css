@@ -140,6 +140,17 @@ canvas {
     padding: 0px 42vw 0px 42vw
 }
 
+.downarrow{
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    z-index: 5;
+}
+
+.downarrow img{
+    width: 30%;
+}
+
 .spacer{
     float: left;
     top: 0px;
