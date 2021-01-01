@@ -125,11 +125,11 @@ canvas {
     position: fixed;
     width: 100%;
     height: 15%;
-    z-index: 5;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
+    z-index: 9999;
 }
 
 .topnav h1{
@@ -160,7 +160,8 @@ canvas {
     position: -webkit-sticky; /* Safari */
     top: 0px;
     background-color: white;
-    padding: 10px 0px 15px 0px;
+    padding: 10px 0px 6px 0px;
+    z-index: 999;
 }
 
 .showtitle h1{
@@ -202,8 +203,8 @@ canvas {
 .masthead p{
     font-family: "Apercu-Light";
     /* font-family: "helvetica"; */
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 13.5px;
+    line-height: 21px;
     color: white;
     animation: textcolor 17.5s infinite;
 }
@@ -222,6 +223,7 @@ canvas {
 .students h2{
     font-family: "GT-Haptic-Light-Rotalic";
     font-size: 2vw;
+    letter-spacing: 2px;
 }
 
 .container-box{
@@ -251,12 +253,14 @@ canvas {
     font-family: "GT-Haptic-Bold";
     font-weight: 400;
     padding: 20px 0px 0px 0px;
+    text-decoration: none;
 }
 
 .student-box-1 h3 {
     font-size: 24px;
     font-family: "GT-Haptic-Light-Rotalic";
     letter-spacing: 2.5px;
+    text-decoration: none;
 }
 
 .spacer-box-1 {
