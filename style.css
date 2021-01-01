@@ -97,6 +97,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -104,7 +105,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    cursor: crosshair;
+/*    cursor: crosshair;*/
+    cursor: url(images/cursor.png), auto;
     overflow-x: hidden;
     margin: 0;
 }
@@ -155,18 +157,32 @@ canvas {
 }
 
 .showtitle{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: sticky;
     position: -webkit-sticky; /* Safari */
     top: 0px;
-    background-color: white;
     padding: 10px 0px 6px 0px;
+/*
+    text-align: center;
+    
+    
+    background-color: white;
+    
     z-index: 999;
+*/
 }
 
 .showtitle h1{
     font-family: "Beatrice-Display";
-    font-size: 3vw;   
+    font-size: 3vw;
+}
+
+.showtitle h2{
+    text-align: right;
+    font-family: "Beatrice";
+    font-size: 1.5vw;
 }
 
 .masthead{
