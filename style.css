@@ -140,6 +140,17 @@ canvas {
     padding: 0px 42vw 0px 42vw
 }
 
+.downarrow{
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    z-index: 5;
+}
+
+.downarrow img{
+    width: 30%;
+}
+
 .spacer{
     float: left;
     top: 0px;
@@ -164,6 +175,12 @@ canvas {
     position: -webkit-sticky; /* Safari */
     top: 0px;
     padding: 10px 0px 6px 0px;
+<<<<<<< HEAD
+=======
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.05646008403361347) 100%);
+/*
+>>>>>>> 2ddf41c4409e88c8fde5a6bf302b94066649b309
     text-align: center;
     z-index: 999;
 }
