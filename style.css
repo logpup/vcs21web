@@ -175,6 +175,8 @@ canvas {
     position: -webkit-sticky; /* Safari */
     top: 0px;
     padding: 10px 0px 6px 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.05646008403361347) 100%);
 /*
     text-align: center;
     
