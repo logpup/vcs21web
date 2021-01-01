@@ -96,7 +96,8 @@
 }
 
 ::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+  background: rgb(255,113,238);
+  background: linear-gradient(0deg, rgba(255,113,238,1) 0%, rgba(255,77,77,1) 19%, rgba(255,159,75,1) 39%, rgba(236,255,80,1) 55%, rgba(64,255,237,1) 75%, rgba(3,179,0,1) 93%);
 }
 
 ::-webkit-scrollbar-thumb {
