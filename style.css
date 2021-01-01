@@ -175,12 +175,6 @@ canvas {
     position: -webkit-sticky; /* Safari */
     top: 0px;
     padding: 10px 0px 6px 0px;
-<<<<<<< HEAD
-=======
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.05646008403361347) 100%);
-/*
->>>>>>> 2ddf41c4409e88c8fde5a6bf302b94066649b309
     text-align: center;
     z-index: 999;
 }
@@ -233,7 +227,7 @@ canvas {
 
 .masthead p{
     font-family: "Apercu-Light";
-    /* font-family: "helvetica"; */
+     font-family: "helvetica"; 
     font-size: 13.5px;
     line-height: 21px;
     color: white;
