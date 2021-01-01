@@ -199,9 +199,9 @@ canvas {
     z-index: 999;
 }
 
-.showtitle div {
+.showtitle div{
     width: 100%;
-    height: 15vh;
+    height: 12vh;
     z-index: 800;
     position: absolute;
     top: 0;
