@@ -147,21 +147,91 @@ canvas {
 /* THE SHOW TITLE THAT MOVES DOWN */
 
 .topnav{
-    position: fixed;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0px;
+    margin: 0 auto 0 auto;
     z-index: 1100;
 }
 
 .topnav h1{
     font-family: "Beatrice";
-    font-size: 1.5vw;
+    font-size: 30px;
     padding: 0px 42vw 0px 42vw;
     z-index: 100;
+    font-weight: 600;
+    width: 25vw;
+}
+
+.sva-vcs{
+    position: absolute;
+    left: 0;
+    float: left;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.sva-vcs:hover{
+    font-size: 31px;
+}
+
+.info{
+    position: absolute;
+    right: 0;
+    float: right;
+    margin-right: 39px;
+    margin-top: 24px;
+}
+
+.info:hover{
+    font-size: 31px;
+}
+
+.info-popup{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(254,254,254,1) 5%);
+    background: linear-gradient(90deg, rgba(161,157,157,0) 0%, rgba(161,157,157,0.4233894241290266) 26%, rgba(203,201,201,0.7539216370141807) 43%, rgba(254,254,254,1) 51%, rgba(254,254,254,1) 100%);
+    z-index: 9999;
+    position: fixed;
+    width: 120vw;
+    height: 100vh;
+    right: -120vw;
+}
+
+.show {
+    animation: show .5s ease-in-out forwards;
+}
+
+.hide {
+    animation: hide .5s ease-in-out backwards;
+}
+
+.info-popup span {
+    position: absolute;
+    right: 0;
+    margin: 20px 45px 20px 20px;
+    font-size: 40px;
+}
+
+@keyframes show {
+    0% {
+        right: -120vw;
+        opacity: 0%;
+    }
+    100% {
+        right: 0vw;
+        opacity: 100%;
+    }
+}
+
+@keyframes hide {
+    0% {
+        right: 0vw;
+        opacity: 100%;
+    }
+    100% {
+        right: -120vw;
+        opacity: 0%;
+    }
 }
 
 .downarrow{
@@ -200,16 +270,21 @@ canvas {
     text-align: center;
     z-index: 1100;
     width: 50vw;
-    background-image: rgba(255, 255, 255, 1);
+    height: 20vh;
+    margin-top: 25vh;
 }
 
-.showtitle h1{
+.showtitle h1 a{
     font-family: "Beatrice-Display";
-    font-size: 3vw;
+    font-size: 45px;
     z-index: 1100;
-    background: rgba(255, 255, 255, 0)
+    background: rgba(255, 255, 255, 0);
+    font-weight: 400;
 }
 
+.showtitle h1 a:hover{
+    font-size: 46px;
+}
 
 .top-gradient{
     position: sticky;
@@ -307,11 +382,16 @@ canvas {
     text-decoration: none;
 }
 
+.student-box-1 h2:hover {
+    font-weight: 600;
+}
+
 .student-box-1 h3 {
     font-size: 24px;
     font-family: "GT-Haptic-Light-Rotalic";
     letter-spacing: 2.5px;
     text-decoration: none;
+    font-weight: 800;
 }
 
 .spacer-box-1 {
@@ -342,6 +422,10 @@ canvas {
     font-weight: 400;
     padding: 20px 0px 0px 0px;
     
+}
+
+.student-box-2 h2:hover {
+    font-weight: 600;
 }
 
 .student-box-2 h3 {
