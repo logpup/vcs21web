@@ -111,7 +111,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    cursor: url(images/cursor.cur), auto;
 }
 
 body{
@@ -119,8 +119,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-/*    cursor: crosshair;*/
-    cursor: url(images/cursor.png), auto;
     overflow-x: hidden;
     margin: 0;
 }
