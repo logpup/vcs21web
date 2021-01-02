@@ -112,6 +112,7 @@
     padding: 0;
     box-sizing: border-box;
     cursor: url(images/cursor.cur), auto;
+    cursor: url(images/cursor.svg) 16 16, auto;
 }
 
 body{
