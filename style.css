@@ -163,6 +163,21 @@ canvas {
     font-size: 30px;
 }
 
+.controls{
+    position: fixed;
+    width: 25vw;
+    height: 10vh;
+    margin: 27px;
+    z-index: 200;
+    bottom: 40vh;
+}
+
+.controls span{
+    float: left;
+    font-family: "Beatrice";
+    font-size: 30px;
+}
+
 .info{
     position: fixed;
     width: 25vw;
@@ -237,7 +252,7 @@ canvas {
 
 .masthead p{
     font-family: "GT-America-Standard-Thin";
-    font-size: 10vh;
+    font-size: 8vh;
     line-height: 12vh;
     color: black;
     text-align: justify;
@@ -246,6 +261,7 @@ canvas {
 .students{
     text-align: center;
     background-color: transparent;
+    
 }
 
 .students h1{
@@ -289,6 +305,7 @@ canvas {
     font-weight: 400;
     padding: 20px 0px 0px 0px;
     text-decoration: none;
+    letter-spacing: -.3px;
 }
 
 .student-box-1 h3 {
@@ -325,6 +342,7 @@ canvas {
     font-family: "GT-Haptic-Bold";
     font-weight: 400;
     padding: 20px 0px 0px 0px;
+    letter-spacing: -.3px;
     
 }
 

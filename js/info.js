@@ -27,8 +27,8 @@ function init() {
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xffffff, .5);
-  light.position.set(50, 50, 100);
+  const light = new THREE.DirectionalLight(0xffffff, 2);
+  light.position.set(150, 150, 0);
   scene.add(light);
     
   //Renderer
@@ -54,7 +54,8 @@ function init() {
 function animate() {
   
     
-  info.rotation.y += -.01; 
+  info.rotation.y += -.003; 
+    info.position.y = -6;
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
@@ -71,3 +72,6 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize);
+
+//Orbit Controls
+  controls = new THREE.OrbitControls( camera, renderer.domElement);
