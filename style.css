@@ -113,7 +113,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 body{
@@ -180,7 +184,15 @@ canvas {
     top: 100vh;
     width: 100vw;
     display: inline-block;
+/*    background: white;*/
+}
 
+.opening-spacer{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
 }
 
 .showtitle{
@@ -189,6 +201,7 @@ canvas {
     justify-content: space-around;
     position: sticky;
     position: -webkit-sticky; /* Safari */
+    font-family: "Beatrice-Display";
     top: 0px;
     padding: 10px 0px 6px 0px;
     text-align: center;
@@ -196,7 +209,6 @@ canvas {
 }
 
 .showtitle h1{
-    font-family: "Beatrice-Display";
     font-size: 3vw;
     z-index: 999;
 }
@@ -212,33 +224,8 @@ canvas {
 
 .masthead{
     padding: 20vh 33vw 20vh 33vw;
-    background: radial-gradient(circle, rgba(255,30,30,1) 0%, rgba(255,137,0,1) 18%, rgba(171,158,40,1) 37%, rgba(105,147,50,1) 61%, rgba(72,105,156,1) 82%, rgba(149,111,134,1) 100%);
-	background-size: 800% 800%;
-	animation: gradient 35s ease-in-out infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes textcolor {
-	0% {
-		color: rgba(0,0,0, 1.0);
-	}
-	50% {
-		color: rgba(0,0,0, 0.1);
-	}
-	100% {
-		color: rgba(0,0,0, 1.0);
-	}
+    z-index: 800;
+    color: black;
 }
 
 .masthead p{
@@ -248,6 +235,7 @@ canvas {
     line-height: 21px;
     color: white;
     animation: textcolor 17.5s infinite;
+    z-index: 900;
 }
 
 .students{
@@ -270,7 +258,7 @@ canvas {
 .container-box{
     width: 100%;
     height: 80vh;
-    margin: 15vh 0vh 15vh 0vh;
+    margin: 25vh 0vh 25vh 0vh;
 }
 
 .student-box-1 {
