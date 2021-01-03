@@ -43,6 +43,11 @@
     width: 30%;
 }
 
+namespacer{
+    width: 100%;
+    height 10vh;
+}
+
 .student-box-2 p{
     font-family: "Apercu-Light";
     /* font-family: "helvetica"; */
@@ -112,5 +117,6 @@
 }
 
 .profile-photo{
+    margin-top: 10vh;
     width: 60%;
 }
