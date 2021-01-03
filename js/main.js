@@ -20,17 +20,6 @@ function init() {
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 0, 300);
-  
-  //GridVis
-    
-    const size = 10;
-    const divisions = 10;
-    const colorGrid = '#28d155';
-
-    const gridHelper = new THREE.GridHelper( size, divisions, colorGrid );
-    scene.add( gridHelper );
-    grid = gridHelper;
-    gridHelper.rotation.set(50, 250, 100);
  
       
     
@@ -69,15 +58,15 @@ function init() {
 
 
 function animate() {
-  
     
-  spiral.rotation.x += .001;
+    
+  spiral.rotation.x += .005;
   spiral.rotation.y += .01;
-  spiral.rotation.z += .001;
+  spiral.rotation.z += .001; 
     
-  fourobj.rotation.x += .001;
+  fourobj.rotation.x += -.001;
   fourobj.rotation.y += -.02;
-  fourobj.rotation.z += .001;
+  fourobj.rotation.z += -.001;
   
      
     
