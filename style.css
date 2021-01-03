@@ -242,14 +242,14 @@ canvas {
 }
 
 .masthead{
-    padding: 20vh 7vw 20vh 7vw;
+    padding: 20vh 8vw 20vh 8vw;
     background-color: white;
 }
 
 .masthead p{
     font-family: "GT-America-Standard-Thin";
     font-size: 10vh;
-    line-height: 12vh;
+    line-height: 14vh;
     color: black;
     animation: textcolor 17.5s infinite;
     text-align: justify;
