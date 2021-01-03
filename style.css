@@ -290,6 +290,7 @@ canvas {
     font-weight: 400;
     padding: 20px 0px 0px 0px;
     text-decoration: none;
+    letter-spacing: -.3px;
 }
 
 .student-box-1 h3 {
@@ -326,6 +327,7 @@ canvas {
     font-family: "GT-Haptic-Bold";
     font-weight: 400;
     padding: 20px 0px 0px 0px;
+    letter-spacing: -.3px;
     
 }
 
