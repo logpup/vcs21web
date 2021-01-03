@@ -10,7 +10,7 @@ function init() {
 
   //Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color('#aaed4c');
+  scene.background = new THREE.Color('#fa9b9b');
 
   //Camera setup    
   const fov = 35;
@@ -19,7 +19,7 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0, 25);
+  camera.position.set(0, 0, 300);
   
   //GridVis
     
@@ -52,39 +52,15 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-  loader.load("obj/ring1.gltf", function(gltf) {
+  loader.load("obj/spiralwhite.gltf", function(gltf) {
     scene.add(gltf.scene);
-    ring1 = gltf.scene;
+    spiral = gltf.scene;
     animate();
   });
     
-   loader.load("obj/ring2.gltf", function(gltf) {
+   loader.load("obj/fourobjects.gltf", function(gltf) {
     scene.add(gltf.scene);
-    ring2 = gltf.scene;
-    animate();
-  });
-    
-   loader.load("obj/ring3.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    ring3 = gltf.scene;
-    animate();
-  });
-    
-   loader.load("obj/ring4.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    ring4 = gltf.scene;
-    animate();
-  });
-  
-   loader.load("obj/ring5.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    ring5 = gltf.scene;
-    animate();
-  });
-    
-   loader.load("obj/ring6.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    ring6 = gltf.scene;
+    fourobj = gltf.scene;
     animate();
   });
           
@@ -94,18 +70,16 @@ function init() {
 
 function animate() {
   
-  ring1.rotation.z += .001;
-  ring1.rotation.y += .001;
-  ring2.rotation.z += .002;
-  ring2.rotation.y += .002;
-  ring3.rotation.z += .003;
-  ring3.rotation.y += .003;
-  ring4.rotation.z += .004;
-  ring4.rotation.y += .004;
-  ring5.rotation.z += .005;
-  ring5.rotation.y += .005; 
-  ring6.rotation.z += .01;
-  ring6.rotation.y += .01;    
+    
+  spiral.rotation.x += .001;
+  spiral.rotation.y += .01;
+  spiral.rotation.z += .001;
+    
+  fourobj.rotation.x += .001;
+  fourobj.rotation.y += -.02;
+  fourobj.rotation.z += .001;
+  
+     
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);

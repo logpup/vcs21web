@@ -91,6 +91,8 @@
     src: url("fonts/Beatrice-Semibold.otf") format("opentype");
 }
 
+/* scroll bar */ 
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -111,18 +113,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url(images/cursor.cur), auto;
-    cursor: url(images/cursor.svg) 16 16, auto;
-}
-
-.hover {
-    cursor: url(images/cursorhover.svg) 16 16, auto;
-}
-
-a {
-    cursor: url(images/cursorhover.svg) 16 16, auto;
-    text-decoration: none;
-    color: black;
+    
 }
 
 body{
@@ -130,6 +121,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+/*    cursor: crosshair;*/
+    cursor: url(images/cursor.png), auto;
     overflow-x: hidden;
     margin: 0;
 }
@@ -147,98 +140,27 @@ canvas {
 /* THE SHOW TITLE THAT MOVES DOWN */
 
 .topnav{
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    top: 0px;
-    margin: 0 auto 0 auto;
-    z-index: 1100;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 9999;
 }
 
 .topnav h1{
     font-family: "Beatrice";
-    font-size: 30px;
-    padding: 0px 42vw 0px 42vw;
-    z-index: 100;
-    font-weight: 600;
-    width: 25vw;
-}
-
-.sva-vcs{
-    position: absolute;
-    left: 0;
-    float: left;
-    margin-left: 20px;
-    margin-top: 24px;
-}
-
-.sva-vcs:hover{
-    font-size: 31px;
-}
-
-.info{
-    position: absolute;
-    right: 0;
-    float: right;
-    margin-right: 39px;
-    margin-top: 24px;
-}
-
-.info:hover{
-    font-size: 31px;
-}
-
-.info-popup{
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(254,254,254,1) 5%);
-    background: linear-gradient(90deg, rgba(161,157,157,0) 0%, rgba(161,157,157,0.4233894241290266) 26%, rgba(203,201,201,0.7539216370141807) 43%, rgba(254,254,254,1) 51%, rgba(254,254,254,1) 100%);
-    z-index: 9999;
-    position: fixed;
-    width: 120vw;
-    height: 100vh;
-    right: -120vw;
-}
-
-.show {
-    animation: show .5s ease-in-out forwards;
-}
-
-.hide {
-    animation: hide .5s ease-in-out backwards;
-}
-
-.info-popup span {
-    position: absolute;
-    right: 0;
-    margin: 20px 45px 20px 20px;
-    font-size: 40px;
-}
-
-@keyframes show {
-    0% {
-        right: -120vw;
-        opacity: 0%;
-    }
-    100% {
-        right: 0vw;
-        opacity: 100%;
-    }
-}
-
-@keyframes hide {
-    0% {
-        right: 0vw;
-        opacity: 100%;
-    }
-    100% {
-        right: -120vw;
-        opacity: 0%;
-    }
+    font-size: 1.5vw;
+    padding: 0px 42vw 0px 42vw
 }
 
 .downarrow{
     position: absolute;
     bottom: 10px;
     left: 45%;
-    z-index: 100;
+    z-index: 5;
 }
 
 .downarrow img{
@@ -258,39 +180,32 @@ canvas {
     top: 100vh;
     width: 100vw;
     display: inline-block;
-    background-color: white;
+
 }
 
 .showtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: sticky;
     position: -webkit-sticky; /* Safari */
     top: 0px;
-    margin: 0 auto 0 auto;
     padding: 10px 0px 6px 0px;
     text-align: center;
-    z-index: 1100;
-    width: 50vw;
-    height: 20vh;
-    margin-top: 25vh;
+    z-index: 999;
 }
 
-.showtitle h1 a{
+.showtitle h1{
     font-family: "Beatrice-Display";
-    font-size: 45px;
-    z-index: 1100;
-    background: rgba(255, 255, 255, 0);
-    font-weight: 400;
+    font-size: 3vw;
+    z-index: 999;
 }
 
-.showtitle h1 a:hover{
-    font-size: 46px;
-}
-
-.top-gradient{
-    position: sticky;
-    width: 100vw;
+.showtitle div{
+    width: 100%;
     height: 12vh;
     z-index: 800;
+    position: absolute;
     top: 0;
     background-image: linear-gradient(180deg,  rgba(254,254,254,1) 49%, rgba(254,254,254,0.9317927854735644) 55%, rgba(254,254,254,0.8701681356136204) 62%, rgba(254,254,254,0.7973390039609594) 69%, rgba(254,254,254,0.6432773793110995) 77%, rgba(254,254,254,0.4331933456976541) 87%, rgba(255,255,255,0) 100%);
 }
@@ -328,8 +243,8 @@ canvas {
 
 .masthead p{
     font-family: "Apercu-Light";
-    font-weight: 100;
-    font-size: 20px;
+     font-family: "helvetica"; 
+    font-size: 13.5px;
     line-height: 21px;
     color: white;
     animation: textcolor 17.5s infinite;
@@ -355,7 +270,7 @@ canvas {
 .container-box{
     width: 100%;
     height: 80vh;
-    margin: 30vh 0vh 30vh 0vh;
+    margin: 15vh 0vh 15vh 0vh;
 }
 
 .student-box-1 {
@@ -382,16 +297,11 @@ canvas {
     text-decoration: none;
 }
 
-.student-box-1 h2:hover {
-    font-weight: 600;
-}
-
 .student-box-1 h3 {
     font-size: 24px;
     font-family: "GT-Haptic-Light-Rotalic";
     letter-spacing: 2.5px;
     text-decoration: none;
-    font-weight: 800;
 }
 
 .spacer-box-1 {
@@ -422,10 +332,6 @@ canvas {
     font-weight: 400;
     padding: 20px 0px 0px 0px;
     
-}
-
-.student-box-2 h2:hover {
-    font-weight: 600;
 }
 
 .student-box-2 h3 {
@@ -465,8 +371,8 @@ canvas {
     font-size: 30px;
 }
 
-.footer img{
-    width: 6vw;
+.footer img {
+    width: 6%;
 }
 
 
