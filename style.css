@@ -152,7 +152,7 @@ canvas {
     position: fixed;
     width: 25vw;
     height: 10vh;
-    padding: 27px;
+    margin: 27px;
     z-index: 200;
     left: 0px;
 }
@@ -167,7 +167,7 @@ canvas {
     position: fixed;
     width: 25vw;
     height: 10vh;
-    padding: 27px;
+    margin: 27px;
     right: 0px;
     z-index: 200;
 }
@@ -210,11 +210,10 @@ canvas {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     font-family: "Beatrice";
-    top: 0px;
-    padding: 10px 0px 6px 0px;
+    top: 1vh;
     text-align: center;
     z-index: 200;
-    margin: 0vh auto -4.6vh auto;
+    margin: 0 auto 0 auto;
 }
 
 .showtitle h1{
@@ -241,13 +240,11 @@ canvas {
     font-size: 10vh;
     line-height: 12vh;
     color: black;
-    animation: textcolor 17.5s infinite;
     text-align: justify;
 }
 
 .students{
     text-align: center;
-    padding-top: 20vh;
     background-color: transparent;
 }
 
