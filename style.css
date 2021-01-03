@@ -201,7 +201,7 @@ canvas {
     justify-content: space-around;
     position: sticky;
     position: -webkit-sticky; /* Safari */
-    font-family: "Beatrice-Display";
+    font-family: "Beatrice";
     top: 0px;
     padding: 10px 0px 6px 0px;
     text-align: center;
