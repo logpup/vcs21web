@@ -192,7 +192,7 @@ canvas {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 
 .showtitle{
@@ -224,18 +224,16 @@ canvas {
 
 .masthead{
     padding: 20vh 33vw 20vh 33vw;
-    z-index: 800;
-    color: black;
+    background-color: white;
 }
 
 .masthead p{
     font-family: "Apercu-Light";
-     font-family: "helvetica"; 
+    font-family: "helvetica"; 
     font-size: 13.5px;
     line-height: 21px;
-    color: white;
+    color: black;
     animation: textcolor 17.5s infinite;
-    z-index: 900;
 }
 
 .students{
