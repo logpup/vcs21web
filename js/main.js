@@ -60,9 +60,11 @@ function init() {
 function animate() {
     
     
-  spiral.rotation.x += .005;
+  spiral.rotation.x += .004;
   spiral.rotation.y += .01;
-  spiral.rotation.z += .001; 
+  spiral.rotation.z += .001;
+    
+  fourobj.rotation.x = .5;    
     
   fourobj.rotation.x += -.001;
   fourobj.rotation.y += -.02;
