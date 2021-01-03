@@ -163,6 +163,21 @@ canvas {
     font-size: 30px;
 }
 
+.controls{
+    position: fixed;
+    width: 25vw;
+    height: 10vh;
+    margin: 27px;
+    z-index: 200;
+    bottom: 40vh;
+}
+
+.controls span{
+    float: left;
+    font-family: "Beatrice";
+    font-size: 30px;
+}
+
 .info{
     position: fixed;
     width: 25vw;
