@@ -13,6 +13,21 @@
     position: sticky;
 }
 
+.showtitle-student{
+    width: 50vw;
+    position: fixed;
+    font-family: "Beatrice";
+    top: 1vh;
+    text-align: center;
+    z-index: 200;
+    left: 25vw;
+    margin: 0 auto 0 auto;
+}
+
+.showtitle-student h1{
+    font-size: 50px;
+}
+
 .downarrow-profile{
     position: sticky;
     bottom: 10px;
