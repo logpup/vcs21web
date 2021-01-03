@@ -184,7 +184,7 @@ canvas {
     top: 100vh;
     width: 100vw;
     display: inline-block;
-/*    background: white;*/
+    background: white;
 }
 
 .opening-spacer{
@@ -206,6 +206,7 @@ canvas {
     padding: 10px 0px 6px 0px;
     text-align: center;
     z-index: 999;
+    margin-bottom: -4.6vh;
 }
 
 .showtitle h1{
@@ -225,6 +226,7 @@ canvas {
 .masthead{
     padding: 20vh 33vw 20vh 33vw;
     background-color: white;
+    height: 94vh;
 }
 
 .masthead p{
