@@ -29,13 +29,12 @@
 }
 
 .downarrow-profile{
-    position: sticky;
-    bottom: 10px;
-    left: 45%;
-    z-index: 100;
+    position: fixed;
+    bottom: 1vw;
+    left: 45vw;
+    z-index: 200;
     width: 25vw;
-    margin-top: -20vh;
-    margin-bottom: 20vh;
+    margin-bottom: 1vw;
     border: none;
 }
 

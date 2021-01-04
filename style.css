@@ -114,6 +114,12 @@
 
 /* BODY */
 
+@media screen (max-width: 500px;) {
+    * {
+        background-color: red;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -127,6 +133,7 @@ a{
 }
 
 body{
+    position: relative;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -195,10 +202,13 @@ canvas {
 }
 
 .downarrow{
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    bottom: 1vw;
     left: 45%;
-    right: 0;
+    z-index: 100;
+    width: 25vw;
+    margin-bottom: 1vw;
+    border: none;
 }
 
 .downarrow img{
@@ -219,6 +229,7 @@ canvas {
     width: 100vw;
     display: inline-block;
     background: white;
+    padding-bottom: 20vh;
 }
 
 .showtitle{
@@ -253,8 +264,8 @@ canvas {
 
 .masthead p{
     font-family: "GT-America-Standard-Thin";
-    font-size: 8vh;
-    line-height: 12vh;
+    font-size: 5vw;
+    line-height: 7.5vw;
     color: black;
     text-align: justify;
 }
@@ -360,15 +371,12 @@ canvas {
 }
 
 .footer {
-    background-color: dimgrey;
-    width: 100%;
-    height: 40vh;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    position: absolute;
+    background: dimgrey;
+    bottom: -30vh;
+    height: 30vh;
+    width: 100vw;
+    z-index: 300;   
 }
 
 .footer a{
@@ -377,6 +385,8 @@ canvas {
 }
 
 .footer h1{
+    padding-top: 10vh;
+    text-align: center;
     color: white;
     font-family: "GT-Haptic-Medium";
     letter-spacing: 3px;
