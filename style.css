@@ -114,12 +114,6 @@
 
 /* BODY */
 
-@media screen (max-width: 500px;) {
-    * {
-        background-color: red;
-    }
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -237,7 +231,7 @@ canvas {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     font-family: "Beatrice";
-    top: 1vh;
+    top: 10px;
     text-align: center;
     z-index: 200;
     margin: 0 auto 0 auto;
@@ -251,10 +245,16 @@ canvas {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     width: 100vw;
-    height: 14vh;
+    height: 150px;
     z-index: 100;
-    top: 0;
+    top: 0px;
     background-image: linear-gradient(180deg, rgba(254,254,254,1) 49%, rgba(254,254,254,0.9317927854735644) 55%, rgba(254,254,254,0.8701681356136204) 62%, rgba(254,254,254,0.7973390039609594) 69%, rgba(254,254,254,0.6432773793110995) 77%, rgba(254,254,254,0.4331933456976541) 87%, rgba(255,255,255,0) 100%);
+}
+
+@media all and (max-width: 1280px) {
+  .top-gradient {
+    height: 300px !important;
+  }
 }
 
 .masthead{
