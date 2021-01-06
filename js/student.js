@@ -32,7 +32,8 @@ $("document").ready(function(){
 //            $(".student-box-2:not(:hover) .piece-description2").css("transform", "scaleX(0)");
 //            $(".student-box-1:hover .piece-description1").css("transform", "scaleX(1)");
 //            $(".student-box-2:hover .piece-description2").css("transform", "scaleX(1)");
-            $('.showtitle-student').html("<h1>3 / DREAM . SPIRAL_RELAX</h1>");
+            $('.showtitle-student').html("<h1><a>3 / DREAM . SPIRAL_RELAX</a></h1>");
+            $(".showtitle-student a").attr("href","index.html");
             $(".showtitle h1-student").css("font-size", "50px")
             $(".profile-photo").css("display", "initial");
             $(".student-box-1 img").css("margin-bottom", "0");
