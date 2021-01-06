@@ -9,6 +9,20 @@ $("document").ready(function(){
             $(".sva-vcs span").css("font-size", "3.5vw");
             $(".info span").css("font-size", "3.5vw");
             $(".sva-vcs span").css("color", "blue");
+            
+            $(".container-box").css("width", "auto")
+            $(".container-box").css("height", "auto")
+
+            
+            $(".student-box-1").css("width", "100%");
+            $(".student-box-1").css("display", "inline"); 
+            
+            $(".student-box-1 img").css("margin", "0 auto 0 auto");
+            
+            $(".student-box-2").css("width", "100%");
+            $(".student-box-2").css("display", "inline"); 
+            $(".student-box-2").css("padding", "11vw");    
+            $(".student-box-2 img").css("margin", "0 auto 0 auto");
         }
     }
     
@@ -24,6 +38,23 @@ $("document").ready(function(){
             $(".sva-vcs span").css("font-size", "30px");
             $(".sva-vcs span").css("color", "red");
             $(".info span").css("font-size", "30px");
+            
+            $(".container-box").css("width", "100%")
+            $(".container-box").css("height", "100vh")
+            
+            $(".student-box-1").css("width", "50%");
+            $(".student-box-1").css("display", "flex"); 
+            
+            $(".student-box-1 img").css("margin", "0 ");
+            
+            $(".student-box-2").css("width", "50%");
+            $(".student-box-2").css("display", "flex"); 
+            $(".student-box-2").css("padding", "0vw");    
+            $(".student-box-2 img").css("margin", "0");
+//            $(".student-box-1").css("width", "50%");
+//            $(".spacer-box-1").css)("width", "50%");
+//            $(".student-box-2").css("width", "50%");
+//            $(".spacer-box-2").css)("width", "50%");
         }
     }
     
