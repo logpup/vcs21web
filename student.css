@@ -42,6 +42,10 @@
     width: 30%;
 }
 
+#arrow {
+    font-size: 40px;
+}
+
 namespacer{
     width: 100%;
     height 10vh;
@@ -49,7 +53,6 @@ namespacer{
 
 .student-box-2 p{
     font-family: "Apercu-Light";
-    /* font-family: "helvetica"; */
     font-size: 14.5px;
     line-height: 24px;
     color: black;
@@ -75,9 +78,15 @@ namespacer{
 
 .student-box-1 .piece-description1 p{
     font-family: "Apercu-Light";
-    /* font-family: "helvetica"; */
-    font-size: 13.5px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+.student-box-1 span{
+    font-family: "GT-Haptic-Light-Rotalic" !important;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .student-box-1:hover .piece-description1{
@@ -90,15 +99,18 @@ namespacer{
     max-height: 45%;
     width: 35%;
     right: 54vw;
+    
     background-color: white;
     border-style: solid;
     border-width: 5px;
     border-radius: 0px 0px 0px 0px;
-    transform: scaleX(0);
     padding:  20px;
+    
+    transform: scaleX(0);
     transform-origin: right;
     transition: 0.3s;
     transform-style: preserve-3d;
+    
     z-index: 0;
     overflow-y: scroll;
 }
@@ -106,8 +118,14 @@ namespacer{
 .student-box-2 .piece-description2 p{
     font-family: "Apercu-Light";
     /* font-family: "helvetica"; */
-    font-size: 13.5px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.student-box-2 span{
+    font-family: "GT-Haptic-Light-Rotalic" !important;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .student-box-2:hover .piece-description2{
