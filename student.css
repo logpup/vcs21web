@@ -138,3 +138,8 @@ namespacer{
 .profile-photo{
     width: 55%;
 }
+
+.scene-2,
+canvas {
+    z-index: 500;
+}
