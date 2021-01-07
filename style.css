@@ -154,6 +154,19 @@ canvas {
     width: 100px;
 }
 
+.logo{
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: -99;
+}
+
+.logo img{
+    width: 50%;
+  
+}
+
 .spacer{
     float: left;
     top: 0px;
@@ -161,6 +174,7 @@ canvas {
     height: 100vh;
     display: inline-block;
 }
+
 
 .main{
     float: left;
@@ -183,14 +197,14 @@ canvas {
 }
 
 .showtitle h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .top-gradient {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     width: 100vw;
-    height: 150px;
+    height: 100px;
     z-index: 100;
     top: 0px;
     background-image: linear-gradient(180deg, rgba(254,254,254,1) 49%, rgba(254,254,254,0.9317927854735644) 55%, rgba(254,254,254,0.8701681356136204) 62%, rgba(254,254,254,0.7973390039609594) 69%, rgba(254,254,254,0.6432773793110995) 77%, rgba(254,254,254,0.4331933456976541) 87%, rgba(255,255,255,0) 100%);
@@ -258,7 +272,7 @@ canvas {
 }
 
 .student-box-1 img {
-    max-width: 90%;
+    max-width: 35vw;
     box-shadow: 0px 0px 60px rgba(0,0,0, 0.5);
 }
 
@@ -292,11 +306,10 @@ canvas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 10vw;
 }
 
 .student-box-2 img {
-    max-width: 90%;
+    max-width: 35vw;
     box-shadow: 0px 0px 60px rgba(0,0,0, 0.5);
 }
 
