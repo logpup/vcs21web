@@ -6,7 +6,11 @@ let renderer;
 let scene;
 
 function init() {
+<<<<<<< HEAD
   container = document.querySelector(".scene-2");
+=======
+  container = document.querySelector(".scene");
+>>>>>>> 83cf8d818b612d1a2f02ab522c2df7a82715452b
 
   //Create scene
   scene = new THREE.Scene();
@@ -41,6 +45,7 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
+<<<<<<< HEAD
     loader.load("obj/spiralwhite.gltf", function(gltf) {
     scene.add(gltf.scene);
     spiral = gltf.scene;
@@ -52,6 +57,19 @@ function init() {
     cloud = gltf.scene;
     animate();
     });
+=======
+  loader.load("obj/spiralwhite.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    spiral = gltf.scene;
+    animate();
+  });
+    
+   loader.load("obj/fourobjects.gltf", function(gltf) {
+    scene.add(gltf.scene);
+    fourobj = gltf.scene;
+    animate();
+  });
+>>>>>>> 83cf8d818b612d1a2f02ab522c2df7a82715452b
           
 
 }
@@ -60,6 +78,7 @@ function init() {
 function animate() {
     
     
+<<<<<<< HEAD
 //  spiral.rotation.x += .004;
 //  spiral.rotation.y += .01;
 //  spiral.rotation.z += .001;
@@ -71,6 +90,19 @@ function animate() {
 //  fourobj.rotation.z += -.001;
   
 
+=======
+  spiral.rotation.x += .004;
+  spiral.rotation.y += .01;
+  spiral.rotation.z += .001;
+    
+  fourobj.rotation.x = .5;    
+    
+  fourobj.rotation.x += -.001;
+  fourobj.rotation.y += -.02;
+  fourobj.rotation.z += -.001;
+  
+     
+>>>>>>> 83cf8d818b612d1a2f02ab522c2df7a82715452b
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
