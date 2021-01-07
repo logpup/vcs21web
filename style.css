@@ -1,60 +1,4 @@
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
-    font-weight: medium;
-}
-
-@font-face {
-    font-family: "Helvetica Light";
-    src:  url("fonts/helvetica/helvetica-light.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Cirka;
-    src: url("fonts/Cirka-Light.otf") format("opentype");
-}
-
-@font-face {
-    font-family: MonumentExtended;
-    src: url("fonts/MonumentExtended-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: NeueMachina;
-    src: url("fonts/NeueMachina-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: NeueWorld;
-    src: url("fonts/NeueWorld-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Hatton;
-    src: url("assets/fonts/Hatton-Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: SupplyReg;
-    src: url("fonts/Supply-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: SupplyLight;
-    src: url("fonts/Supply-UltraLight.otf") format("opentype");
-}
-
-@font-face {
-    font-family: FormulaCond;
-    src: url("fonts/FormulaCondensed-Bold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: MajorMono;
-    src: url("fonts/MajorMono-Regular.ttf") format("truetype");
-}
-
-@font-face {
     font-family: Apercu-Light;
     src: url("fonts/Apercu-Light.otf") format("opentype");
 }
@@ -270,7 +214,7 @@ canvas {
 }
 
 .masthead p{
-    font-family: "GT-America-Standard-Thin";
+    font-family: "Apercu-Light";
     font-size: 5vw;
     line-height: 7.5vw;
     color: black;
@@ -284,7 +228,7 @@ canvas {
 }
 
 .students h1{
-    font-family: "GT-Haptic-Bold";
+    font-family: "Beatrice";
     font-size: 50px;
 }
 

@@ -19,6 +19,7 @@ $("document").ready(function(){
             $(".student-box-2 .piece-description2").css("width", "75%");
             $(".student-box-2 .piece-description2").css("left", "20vw");
             $(".student-box-2").css("margin", "200px auto 200px auto");
+            $(".downarrow-profile").css("left", "40%");
         }
     }
     
@@ -44,6 +45,7 @@ $("document").ready(function(){
             $(".student-box-2 img").css("margin-left", "4vw");
             $(".student-box-2 .piece-description2").css("width", "30%");
             $(".student-box-2").css("margin", "0");
+            $(".downarrow-profile").css("left", "50%");
         }
     }
     
