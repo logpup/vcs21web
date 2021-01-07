@@ -48,14 +48,16 @@
 
 namespacer{
     width: 100%;
-    height 10vh;
+    height: 0vh;
 }
 
-.student-box-2 p{
+.student-box-2 h4{
     font-family: "Apercu-Light";
     font-size: 14.5px;
     line-height: 24px;
     color: black;
+    padding-right: 10vw;
+    
 }
 
 .student-box-1 .piece-description1{
@@ -134,5 +136,5 @@ namespacer{
 }
 
 .profile-photo{
-    width: 60%;
+    width: 55%;
 }

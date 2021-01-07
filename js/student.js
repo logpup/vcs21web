@@ -11,14 +11,21 @@ $("document").ready(function(){
             $(".student-box-1 .piece-description1").css("transform", "scaleX(1)");
             $(".student-box-2 .piece-description2").css("transform", "scaleX(1)");
             $(".student-box-1 img").css("margin-bottom", "5vh");
-            $(".student-box-1 .piece-description1").css("width", "75%");
+            $(".student-box-1 img").css("margin-right", "0vw");
+            $(".student-box-1 img").css("max-width", "90%");
+            $(".student-box-1 .piece-description1").css("width", "66%");
             $(".student-box-1 .piece-description1").css("left", "20vw");
             $(".student-box-1").css("margin", "200px auto 200px auto");
             $(".student-box-2 img").css("margin-bottom", "5vh");
             $(".student-box-2 img").css("margin-left", "0vw");
-            $(".student-box-2 .piece-description2").css("width", "75%");
-            $(".student-box-2 .piece-description2").css("left", "20vw");
+            $(".student-box-2 img").css("max-width", "90%");
+            $(".student-box-2").css("width", "100%");
+            $(".student-box-2").css("height", "100%");
+            $(".spacer-box-2").css("width", "0%");
+            $(".student-box-2 .piece-description2").css("width", "66%");
+            $(".student-box-2 .piece-description2").css("right", "20vw");
             $(".student-box-2").css("margin", "200px auto 200px auto");
+            $(".student-box-2 h4").css("padding-right", "0vw");
         }
     }
     
@@ -44,6 +51,7 @@ $("document").ready(function(){
             $(".student-box-2 img").css("margin-left", "4vw");
             $(".student-box-2 .piece-description2").css("width", "30%");
             $(".student-box-2").css("margin", "0");
+            $(".student-box-2 h4").css("padding-right", "12vw");
         }
     }
     
