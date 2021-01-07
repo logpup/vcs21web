@@ -210,6 +210,19 @@ canvas {
     width: 100px;
 }
 
+.logo{
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: -99;
+}
+
+.logo img{
+    width: 50%;
+  
+}
+
 .spacer{
     float: left;
     top: 0px;
