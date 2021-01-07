@@ -25,7 +25,11 @@ $("document").ready(function(){
             $(".student-box-2 .piece-description2").css("width", "66%");
             $(".student-box-2 .piece-description2").css("right", "20vw");
             $(".student-box-2").css("margin", "200px auto 200px auto");
+<<<<<<< HEAD
+            $(".downarrow-profile").css("left", "40%");
+=======
             $(".student-box-2 h4").css("padding-right", "0vw");
+>>>>>>> 154b7ffa57e685fb4ee3183289220016ceb808fb
         }
     }
     
@@ -51,7 +55,11 @@ $("document").ready(function(){
             $(".student-box-2 img").css("margin-left", "4vw");
             $(".student-box-2 .piece-description2").css("width", "30%");
             $(".student-box-2").css("margin", "0");
+<<<<<<< HEAD
+            $(".downarrow-profile").css("left", "50%");
+=======
             $(".student-box-2 h4").css("padding-right", "12vw");
+>>>>>>> 154b7ffa57e685fb4ee3183289220016ceb808fb
         }
     }
     
