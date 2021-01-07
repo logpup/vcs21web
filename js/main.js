@@ -47,7 +47,7 @@ function init() {
     animate();
   });
     
-   loader.load("obj/fourobjects.gltf", function(gltf) {
+  loader.load("obj/fourobjects.gltf", function(gltf) {
     scene.add(gltf.scene);
     fourobj = gltf.scene;
     animate();
@@ -59,7 +59,7 @@ function init() {
 
 function animate() {
     
-    
+  
   spiral.rotation.x += .004;
   spiral.rotation.y += .01;
   spiral.rotation.z += .001;
