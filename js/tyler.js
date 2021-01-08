@@ -6,6 +6,7 @@ let renderer;
 let scene;
 
 function init() {
+  container = document.querySelector(".scene-2");
   container = document.querySelector(".scene");
 
   //Create scene
@@ -19,21 +20,13 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0, 100);
+  camera.position.set(0, 0, 50);
  
       
     
   //Light setup
-<<<<<<< HEAD
-  const ambient = new THREE.AmbientLight(0xfe2c900, 3);
-=======
-  const ambient = new THREE.AmbientLight(0x404040, 2);
->>>>>>> a1a359f2b37f4b5f0e69d6debef564125bead3a5
+  const ambient = new THREE.AmbientLight(0xafaf00, 3);
   scene.add(ambient);
-
-  const light = new THREE.DirectionalLight(0xffffff, 20);
-  light.position.set(50, 50, 100);
-  scene.add(light);
     
   //Renderer
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -45,25 +38,20 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-   loader.load("obj/cloudrainbow.gltf", function(gltf) {
+    loader.load("obj/cloudrainbow_prof.gltf", function(gltf) {
     scene.add(gltf.scene);
     cloud = gltf.scene;
     animate();
-  });
+    });
           
 
 }
 
 
 function animate() {
-    
-    
-  cloud.rotation.x += .004;
-  cloud.rotation.y += .01;
-  cloud.rotation.z += .001;
+  cloud.rotation.z += 0.006;
+  cloud.rotation.y += 0.007;
 
-  
-     
     
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
