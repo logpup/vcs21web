@@ -10,7 +10,7 @@ function init() {
 
   //Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color('#fa9b9b');
+  scene.background = new THREE.Color('#ffffff');
 
   //Camera setup    
   const fov = 35;
@@ -19,7 +19,7 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0, 300);
+  camera.position.set(0, 0, 100);
  
       
     
@@ -27,7 +27,7 @@ function init() {
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xffffff, 1);
+  const light = new THREE.DirectionalLight(0xffffff, 20);
   light.position.set(50, 50, 100);
   scene.add(light);
     
@@ -41,15 +41,9 @@ function init() {
   //Load Models
   let loader = new THREE.GLTFLoader();
     
-  loader.load("obj/spiralwhite.gltf", function(gltf) {
+   loader.load("obj/cloudrainbow.gltf", function(gltf) {
     scene.add(gltf.scene);
-    spiral = gltf.scene;
-    animate();
-  });
-    
-   loader.load("obj/fourobjects.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    fourobj = gltf.scene;
+    cloud = gltf.scene;
     animate();
   });
           
@@ -60,15 +54,10 @@ function init() {
 function animate() {
     
     
-  spiral.rotation.x += .004;
-  spiral.rotation.y += .01;
-  spiral.rotation.z += .001;
-    
-  fourobj.rotation.x = .5;    
-    
-  fourobj.rotation.x += -.001;
-  fourobj.rotation.y += -.02;
-  fourobj.rotation.z += -.001;
+  cloud.rotation.x += .004;
+  cloud.rotation.y += .01;
+  cloud.rotation.z += .001;
+
   
      
     
