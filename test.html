@@ -1,5 +1,30 @@
-<div style="width:100px"> 
-<marquee>
-<span>HEHEHEHEHEHEEHEHEHEH</span>
-</marquee>
+<html>
+<head>
+<style>
+#myDIV {
+  margin-top: 10px;
+  height: 250px;
+  width: 250px;
+  overflow: auto;
+}
+
+#content {
+  height: 800px;
+  width: 2000px;
+  padding: 10px;
+  background-color: coral;
+}
+</style>
+<script src="js/scroll.js"></script>
+</head>
+<body>
+
+<p>Click the button to get the entire height (vertically) and width (horizontally) of the div element with id="content".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+  <div id="content">Some content..</div>
 </div>
+
+<p id="demo"></p>

@@ -1,4 +1,6 @@
 $("document").ready(function(){
+    
+    // Media Queries
     const mqSm = window.matchMedia('(max-width: 840px)')
     
     function sizeChangeSm(e){

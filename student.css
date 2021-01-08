@@ -13,6 +13,21 @@
     position: sticky;
 }
 
+#top-scroll{
+    position: fixed;
+    left: 0;
+    width:90vw;
+    height:.7vh;
+    z-index:1000;
+}
+
+/* #progress-bar{
+    position: fixed;
+    width:50vw;
+    height.5vh;
+    background
+} */
+
 .showtitle-student{
     width: 50vw;
     position: absolute;
