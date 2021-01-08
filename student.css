@@ -15,7 +15,7 @@
 
 .showtitle-student{
     width: 50vw;
-    position: fixed;
+    position: absolute;
     font-family: "Beatrice";
     top: 1vh;
     text-align: center;
@@ -26,6 +26,12 @@
 
 .showtitle-student h1{
     font-size: 50px;
+}
+
+.student-as-title {
+    position: sticky;
+    position: webstick-sticky;
+    z-index: 1000;
 }
 
 .downarrow-profile{
@@ -57,13 +63,14 @@ namespacer{
     line-height: 24px;
     color: black;
     padding-right: 10vw;
-    
+    top: 0;
+    position: absolute;
 }
 
 .student-box-1 .piece-description1{
     position: absolute;
     max-height: 45%;
-    width: 35%;
+    width: auto;
     left: 50vw;
     background-color: white;
     border-style: solid;
@@ -76,6 +83,7 @@ namespacer{
     transform-style: preserve-3d;
     z-index: 0;
     overflow-y: scroll;
+    
 }
 
 .student-box-1 .piece-description1 p{
@@ -100,7 +108,7 @@ namespacer{
     position: absolute;
     max-height: 45%;
     width: 35%;
-    right: 54vw;
+    right: 45vw;
     
     background-color: white;
     border-style: solid;
