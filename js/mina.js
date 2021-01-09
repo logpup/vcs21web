@@ -10,6 +10,7 @@ $("document").ready(function(){
     // ScrollBar
     var doc = $(document).height();
     var w = $(window).width();
+    var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
       $("#top-scroll").css({width: (user / doc) * 100 + "vw"})
