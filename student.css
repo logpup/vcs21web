@@ -21,13 +21,6 @@
     z-index:1000;
 }
 
-/* #progress-bar{
-    position: fixed;
-    width:50vw;
-    height.5vh;
-    background
-} */
-
 .showtitle-student{
     width: 50vw;
     position: absolute;
@@ -41,12 +34,6 @@
 
 .showtitle-student h1{
     font-size: 50px;
-}
-
-.student-as-title {
-    position: sticky;
-    position: webstick-sticky;
-    z-index: 1000;
 }
 
 .downarrow-profile{
@@ -85,7 +72,7 @@ namespacer{
 .student-box-1 .piece-description1{
     position: absolute;
     max-height: 45%;
-    width: auto;
+    width: 35%;
     left: 50vw;
     background-color: white;
     border-style: solid;
