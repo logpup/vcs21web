@@ -1,11 +1,11 @@
 
 $("document").ready(function(){
-  var user = $(document).scrollTop();
-  console.log(user);
-  var doc = $(document).height();
-  console.log(doc);
-  var w = $(window).width();
-  console.log(w + " window width");
+  // var user = $(document).scrollTop();
+  // console.log(user);
+  // var doc = $(document).height();
+  // console.log(doc);
+  // var w = $(window).width();
+  // console.log(w + " window width");
 
   function resize() {
     var doc = $(document).height();

@@ -1,30 +1,75 @@
-<html>
-<head>
-<style>
-#myDIV {
-  margin-top: 10px;
-  height: 250px;
-  width: 250px;
-  overflow: auto;
-}
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+  </head>
+  
+  <body>
+    <div id="top-scroll" style="background : orange; position: fixed;"></div>
+    <div class="sva-vcs">
+      <a href="https://vcs.sva.edu/" target="_blank">
+         <span>SVA|VCS</span>
+      </a>
+</div>    
+<div class="info">
+      <a href="info.html" target="_blank">
+         <span>INFO</span>
+      </a>
+</div>    
 
-#content {
-  height: 800px;
-  width: 2000px;
-  padding: 10px;
-  background-color: coral;
-}
+    <div class="logo">
+      <img src="images/3dreamLOGO.png">
+  </div>
+
+  <!-- <div style="position: relative;" class="masthead">   
+    <p>
+        Spiral 🌀 is a Canadian horror thriller film, directed by Kurtis David Harder and released in 2019. The film stars Jeffrey Bowyer-Chapman 👩🏼‍🎤 and Ari Cohen as Malik and Aaron, respectively, a same-sex ♂♂ couple who move to a small town 🏠 with their daughter Kayla (Jennifer Laporte), only to suspect that their initial welcome from their neighbors Marshall 🧔 (Lochlyn Munro) and Tiffany 👧 (Chandra West) may be concealing something much more sinister 🙀.
+        <br><br><br>
+        The movie received generally positive reviews 📰. On review aggregator Rotten Tomatoes 🍅, the film 🎥 an approval rating of 77% based on 31 reviews, with an average rating of 6.8/10.
+        <br><br>
+    </p>
+</div> -->
+<!-- <style>
+  .spacer-test{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0);
+  }
 </style>
-<script src="js/scroll.js"></script>
-</head>
-<body>
+<div class="spacer-test">
+</div> -->
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;bottom:50px;right:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;bottom:50px;right:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;bottom:50px;right:240px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script> 
+       
+    <div style="position: absolute;">
+    <div style="z-index: 100" class="scene"></div> 
+    </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/test.js"></script>
 
-<p>Click the button to get the entire height (vertically) and width (horizontally) of the div element with id="content".</p>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script type="text/javascript">
+	       VanillaTilt.init(document.querySelectorAll(".hover"), {
+               reverse: true,
+               max: 30,
+               speed: 1000,
+               perspective: 600,
+               scale: 1.2
+	       });
+    </script>
 
-<button onclick="myFunction()">Try it</button>
 
-<div id="myDIV">
-  <div id="content">Some content..</div>
-</div>
+</body>
 
-<p id="demo"></p>
+</html>
