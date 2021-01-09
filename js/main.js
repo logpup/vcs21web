@@ -52,12 +52,6 @@ function init() {
     fourobj = gltf.scene;
     animate();
   });
-    
-    loader.load("obj/cloudrainbow.gltf", function(gltf) {
-    scene.add(gltf.scene);
-    cloud = gltf.scene;
-    animate();
-    });
           
 
 }
@@ -75,10 +69,6 @@ function animate() {
   fourobj.rotation.x += -.001;
   fourobj.rotation.y += -.02;
   fourobj.rotation.z += -.001;
-  
-  cloud.scale.x = 5;
-  cloud.scale.y = 5;
-  cloud.scale.z = 5;
 
     
   requestAnimationFrame(animate);
