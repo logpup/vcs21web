@@ -24,7 +24,28 @@ $("document").ready(function(){
       w = $(window).width();
       height = ppH + ssH + 70;
       $(".intro").css({ height: height + "px" });
+
+      $(this).siblings().css("display", "none");
+
+      $(".port-img").mouseover(function(){
+        $(".port-img").click(function(){
+          if ($(this).siblings().css("display") == "none") {
+            $(this).siblings().css("display", "initial");
+          } else {
+            $(this).siblings().css("display", "none");
+          }
+        });
+      });
+  
+      // $(".port-img").mouseout(function(){
+      //   $(this).siblings().css("display", "none");
+      // });
+
+      
+      
     }
+
+    
 
     // Image Resize like Flex: Portfolio
     // var w = $(window).width();

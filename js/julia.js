@@ -20,9 +20,19 @@ $("document").ready(function(){
     height = ssH + 100;
     $(".intro").css({ height: height + "px" });
     if (w < 1000) {
+      alert("hhh");
       w = $(window).width();
       height = ppH + ssH + 70;
       $(".intro").css({ height: height + "px" });
+
+      $(".port-img").mouseover(function(){
+        
+        $(this).siblings().css("transform", "scaleX(0)");
+      });
+  
+      $(".port-img").mouseout(function(){
+        $(this).siblings().css("transform", "scaleX(0)");
+      });
     }
 
     // Image Resize like Flex: Portfolio
