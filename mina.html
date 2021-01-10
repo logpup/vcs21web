@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <script src="js/three.min.js"></script>
     <script src="js/GLTFLoader.js"></script>
 </head>
@@ -27,7 +28,6 @@
       } */
     body {
       overflow-x: hidden;
-      clear: left;
     }
 
     #top-scroll{
@@ -66,22 +66,56 @@
       height: 40px;
       margin: 27px;
       text-align: left;
+      z-index: 400;
     "
   >
+    
     <div
+      class="home"
       style="
         width: 100%;
         height: 40px;
         display: inline-block;
+        
       "
     >
-      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto"
-        >Home</span
-      >
+      
+      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto">
+        <a style="text-decoration: none; color: black;" href="https://vcs-21.nyc">Home</a> 
+      </span>
     </div>
+  
   </div>
+  <style>
 
+    @media all and (max-width: 480px) {
+      .info{
+        width: 30vw !important;
+        border: 1px black solid;
+        margin: 0;
+      }
+      .home{
+        width: 30vw !important;
+        border: 1px black solid;
+        margin: 0;
+      }
+      .student-nav{
+        width: 40vw !important;
+        border: 1px black solid !important;
+      }
+      .home span{
+        font-size: 7vw  !important;
+      }
+      .info span{
+        font-size: 7vw !important;
+      }
+      .student-nav span{
+        font-size: 7vw !important;
+      }
+    }
+  </style>
   <div
+    class="info"
     style="
       position: fixed;
       right: 0;
@@ -90,6 +124,7 @@
       height: 40px;
       margin: 27px;
       text-align: right;
+      z-index: 400;
     "
   >
     <div
@@ -99,9 +134,9 @@
         display: inline-block;
       "
     >
-      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto"
-        >INFO</span
-      >
+      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto" >
+        INFO
+      </span>
     </div>
   </div>
 
@@ -120,7 +155,9 @@
     >
       <span
         style="display: inline-block; margin: 0 auto 0 auto; font-size: 50px"
-        >⤺</span
+        >
+        <a style="text-decoration: none; color: black; cursor: pointer;" href="https://logpup.github.io/vcs21web/naomi.html">⤺</a>
+        </span
       >
     </div>
     <div
@@ -142,7 +179,9 @@
         font-size: 50px;
       "
     >
-      <span>⤻</span>
+      <span>
+      <a style="text-decoration: none; color: black; cursor: pointer;" href="https://logpup.github.io/vcs21web/julia.html">⤻</a>
+      </span>
     </div>
   </div>
   <style>
@@ -169,6 +208,7 @@
         margin-bottom: 0 !important;
       }
     }
+
   </style>
   <div
     class="intro"
