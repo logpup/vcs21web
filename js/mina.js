@@ -27,14 +27,12 @@ $("document").ready(function(){
 
       $(this).siblings().css("display", "none");
 
-      $(".port-img").mouseover(function(){
-        $(".port-img").click(function(){
-          if ($(this).siblings().css("display") == "none") {
-            $(this).siblings().css("display", "initial");
-          } else {
-            $(this).siblings().css("display", "none");
-          }
-        });
+      $(".port-img").click(function(){
+        if ($(this).siblings().css("display") == "none") {
+          $(this).siblings().css("display", "initial");
+        } else {
+          $(this).siblings().css("display", "none");
+        }
       });
   
       // $(".port-img").mouseout(function(){
