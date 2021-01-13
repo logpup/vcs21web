@@ -16,6 +16,14 @@ $("document").ready(function(){
       $("#top-scroll").css({width: 6 + (user / doc) * 94 + "vw"})
     });
 
+    // Image to text-box margin manipulation
+    var imgH = $(".intro img").height();
+    var imgMargT = parseInt($(".intro img").css("margin-top").replace("px",""));
+    var textH = $(".state-side h4").height();
+    var textMargT = ((imgH - textH) / 2 + imgMargT).toString();
+    // var imgHtopM = $(".intro img").css("margin-top").replace("px","");
+    $(".state-side h4").css("margin-top", textMargT + "px");
+
     // Image Resize like Flex: Info Card
     var ppH = $(".pp-side").height();
     var ssH = $(".state-side h4").height();

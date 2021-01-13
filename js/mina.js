@@ -8,9 +8,10 @@ $("document").ready(function(){
     // ScrollBar
     var doc = $(document).height();
     var w = $(window).height();
+    var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: (user/ doc) * 100 + "vw"})
+      $("#top-scroll").css({width: 6 + (user / doc) * 107 + "vw"})
     });
 
     // Image to text-box margin manipulation
