@@ -100,7 +100,7 @@ function init() {
 
     
   //Light setup
-  const ambient = new THREE.AmbientLight(0xf27b1f, 2);
+  const ambient = new THREE.AmbientLight(0xf08432, 2);
   scene.add(ambient);
 
     
