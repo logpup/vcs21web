@@ -10,7 +10,7 @@ $("document").ready(function(){
     var w = $(window).height();
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: (user / doc) * 100 + "vw"})
+      $("#top-scroll").css({width: (user/ doc) * 100 + "vw"})
     });
 
     // Image to text-box margin manipulation
