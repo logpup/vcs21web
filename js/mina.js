@@ -8,7 +8,6 @@ $("document").ready(function(){
     // ScrollBar
     var doc = $(document).height();
     var w = $(window).height();
-    var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
       $("#top-scroll").css({width: (user / doc) * 100 + "vw"})
@@ -21,22 +20,14 @@ $("document").ready(function(){
     var textMargT = ((imgH - textH) / 2 + imgMargT).toString();
     // var imgHtopM = $(".intro img").css("margin-top").replace("px","");
     $(".state-side h4").css("margin-top", textMargT + "px");
-
-    console.log("********************");
-    console.log(imgH + " img-height");
-    console.log(textH + " text-height");
-    console.log($(".intro img").css("margin-top").replace("px","") + " img-topMargin");
-    console.log(textMargT + " text-topMarg");
-    console.log($(".state-side h4").css("margin-top"));
-    console.log("********************");
-
+    // (imgMargT * 2 + imgH).toString() + "px"
+    
     // Image Resize like Flex: Info Card
     var ppH = $(".pp-side").height();
     var ssH = $(".state-side h4").height();
-    height = ssH + 100;
-    $(".intro").css({ height: height + "px" });
-
-    
+    h = 954 - 100;
+    $(".intro").css({ height: h + "px" });
+    console.log(ppH)
     
     if (w < 1000) {
       w = $(window).width();
