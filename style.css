@@ -236,6 +236,7 @@ canvas {
 
 .masthead p{
     font-family: "Apercu-Light";
+    padding: 10vh 10vw 10vh 10vw;
     font-size:21px;
     line-height: 33px;
     color: white;

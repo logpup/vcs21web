@@ -1,150 +1,277 @@
-.main{
-    float: left;
-    top: 100vh;
-    width: 100vw;
-    display: inline-block;
-    background: transparent;
+@font-face {
+    font-family: Beatrice;
+    src: url("fonts/Beatrice-Semibold.otf") format("opentype");
+  }
+
+@font-face {
+    font-family: Apercu-Light;
+    src: url("fonts/Apercu-Light.otf") format("opentype");
 }
 
-.background {
-    z-index: 100;
-    width: 100vw;
-    height: auto;
-    position: sticky;
+@font-face {
+    font-family: GT-Haptic-Light-Rotalic;
+    src: url("fonts/GT-Haptik-Light-Rotalic-Trial.otf") format("opentype");
+}
+
+body {
+overflow-x: hidden;
 }
 
 #top-scroll{
+position: fixed;
+left: 0;
+width:90vw;
+height:.7vh;
+z-index:1000;
+}
+
+.scene{
+position: fixed;
+width: 100vw;
+height: 100vh;
+z-index: -500;
+}
+
+.scene, canvas { 
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.home {
     position: fixed;
     left: 0;
-    width:90vw;
-    height:.7vh;
-    z-index:1000;
-}
-
-.showtitle-student{
-    width: 50vw;
-    position: absolute;
-    font-family: "Beatrice";
-    top: 1vh;
-    text-align: center;
-    z-index: 200;
-    left: 25vw;
-    margin: 0 auto 0 auto;
-}
-
-.showtitle-student h1{
-    font-size: 50px;
-}
-
-.downarrow-profile{
-    position: fixed;
-    bottom: 1vw;
-    left: 45vw;
-    z-index: 200;
-    width: 25vw;
-    margin-bottom: 1vw;
-    border: none;
-}
-
-.downarrow-profile img{
-    width: 100px;
-}
-
-#arrow {
-    font-size: 40px;
-}
-
-namespacer{
-    width: 100%;
-    height: 0vh;
-}
-
-.student-box-2 h4{
-    font-family: "Apercu-Light";
-    font-size: 14.5px;
-    line-height: 24px;
-    color: black;
-    padding-right: 10vw;
     top: 0;
+    width: 93px;
+    height: 40px;
+    margin: 27px;
+    text-align: left;
+    z-index: 400;
+}
+
+.home div{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+.home span {
+   font-size: 30px;
+   font-family: 'Beatrice';
+   margin: auto
+}
+
+.home a {
+    text-decoration: none;
+    color: black; 
+}
+
+@media all and (max-width: 480px) {
+    .info{
+      width: 30vw !important;
+      margin: 0;
+    }
+    .home{
+      width: 30vw !important;
+      margin: 0;
+    }
+    .student-nav{
+      width: 40vw !important;
+    }
+    .home span{
+      font-size: 7vw  !important;
+    }
+    .info span{
+      font-size: 7vw !important;
+    }
+    .student-nav span{
+      font-size: 7vw !important;
+    }
+}
+
+.info {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    margin: 27px;
+    text-align: right;
+    z-index: 400;
+}
+
+.info div {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+.info span{
+    font-size: 30px;
+    font-family: 'Beatrice';
+    margin: auto
+}
+
+.student-nav{
+    position: relative;
+    width: 450px;
+    height: 150px;
+    margin: 100px auto 20px auto;
+    text-align: center;
+}
+
+.nav-arrow {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+}
+
+.nav-arrow span {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    font-size: 50px
+}
+
+.nav-arrow a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-name {
+    width: 100%;
+    height: 55px;
+    display: inline-block;
+}
+
+@media all and (max-width: 1000px) {
+    .intro {
+    }
+
+    .pp-side {
+        width: 80vw !important;
+    }
+
+    .pp-side img {
+        width: 80vw !important;
+        margin-top: 20em;
+    }
+
+    .state-side {
+        width: 80vw !important;
+        top: 121vw !important;
+        margin: 50px 0 200px 0;
+    }
+
+    .state-side h4 {
+        margin-bottom: 0 !important;
+    }
+}
+
+.intro {
+    position: relative;
+    width: 80vw;
+    height: 45vw !important;
+    margin: 5vh auto 5vh auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.pp-side {
     position: absolute;
+    left: 0;
+    top: 0;
+    width: 47%;
+    display: flexbox;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
 }
 
-.student-box-1 .piece-description1{
+.pp-image {
+    margin: 18% auto 0 auto;
+    width: 70%;
+    display: flexbox;
+    border: 1px solid black;
+}
+
+.state-side {
     position: absolute;
-    max-height: 45%;
-    width: 35%;
-    left: 50vw;
-    background-color: white;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 0px 0px 0px 0px;
-    transform: scaleX(0);
-    padding:  20px;
-    transform-origin: left;
-    transition: 0.3s;
-    transform-style: preserve-3d;
-    z-index: 0;
-    overflow-y: scroll;
-    
+    right: 0;
+    width: 47%;
+    border: 1px solid black;
 }
 
-.student-box-1 .piece-description1 p{
-    font-family: "Apercu-Light";
-    font-size: 20px;
-    line-height: 26px;
+.state-side h4{
+    margin: 6vw auto 0 auto;
+    font-family: Apercu-Light;
+    border: 1px solid black;
 }
 
+@media all and (max-width: 1000px) {
+    .port-slot {
+      height: 80vw !important;
+    }
 
-.student-box-1 span{
-    font-family: "GT-Haptic-Light-Rotalic" !important;
-    font-size: 22px;
-    letter-spacing: 1px;
+    .port-img {
+      width: 100% !important;
+    }
+
+    .desc-cont .left {
+      position: absolute;
+      right: 0 !important;
+      bottom: 0 !important;
+    }
+
+    .descript {
+      font-size: 3vw;
+    }
 }
 
-.student-box-1:hover .piece-description1{
-    transform: scaleX(1);
-    z-index: 1;
+.port-slot {
+    position: relative;
+    width: 80vw;
+    min-height: 38.5vw;
+    margin: 15vh auto 15vh auto;
+    display: flex;
 }
 
-.student-box-2 .piece-description2{
+.port-img {
     position: absolute;
-    max-height: 45%;
-    width: 35%;
-    right: 45vw;
-    
-    background-color: white;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 0px 0px 0px 0px;
-    padding:  20px;
-    
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.port-img img {
+    width: 90%
+}
+
+.desc-cont .left {
+    position: absolute;
+    top: 44%;
+    right: 45%;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5vw;
+    background: white;
+    border: 4px black solid;
+
     transform: scaleX(0);
     transform-origin: right;
     transition: 0.3s;
     transform-style: preserve-3d;
-    
-    z-index: 0;
-    overflow-y: scroll;
 }
 
-.student-box-2 .piece-description2 p{
+.descript {
     font-family: "Apercu-Light";
-    /* font-family: "helvetica"; */
-    font-size: 20px;
-    line-height: 24px;
 }
 
-.student-box-2 span{
-    font-family: "GT-Haptic-Light-Rotalic" !important;
-    font-size: 22px;
-    letter-spacing: 1px;
-}
-
-.student-box-2:hover .piece-description2{
-    transform: scaleX(1);
-    z-index: 1;
-}
-
-.profile-photo{
-    width: 55%;
+.descript span {
+    font-family: "GT-Haptic-Light-Rotalic";
 }

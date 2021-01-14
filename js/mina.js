@@ -1,60 +1,46 @@
 $("document").ready(function(){
   var user = $(document).scrollTop();
   var doc = $(document).height();
-  var w = $(window).width();
+  var h = $(window).width();
   var height;
-  var portimH;
-  var portslH;
 
   function resize() {
     // ScrollBar
     var doc = $(document).height();
-    var w = $(window).width();
+    var w = $(window).height();
     var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: (user / doc) * 100 + "vw"})
+      $("#top-scroll").css({width: 6 + (user / doc) * 107 + "vw"})
     });
+
+    // Image to text-box margin manipulation
+    var imgH = $(".intro img").height();
+    var imgMargT = parseInt($(".intro img").css("margin-top").replace("px",""));
+    var textH = $(".state-side h4").height();
+    var textMargT = ((imgH - textH) / 2 + imgMargT).toString();
+    // var imgHtopM = $(".intro img").css("margin-top").replace("px","");
+    $(".state-side h4").css("margin-top", textMargT + "px");
+    // (imgMargT * 2 + imgH).toString() + "px"
+    
     // Image Resize like Flex: Info Card
     var ppH = $(".pp-side").height();
     var ssH = $(".state-side h4").height();
-    height = ssH + 100;
-    $(".intro").css({ height: height + "px" });
+    h = 954 - 100;
+    $(".intro").css({ height: h + "px" });
+    console.log(ppH)
+    
     if (w < 1000) {
       w = $(window).width();
       height = ppH + ssH + 70;
       $(".intro").css({ height: height + "px" });
-
-      $(this).siblings().css("display", "none");
-
-      $(".port-img").click(function(){
-        if ($(this).siblings().css("display") == "none") {
-          $(this).siblings().css("display", "initial");
-        } else {
-          $(this).siblings().css("display", "none");
-        }
-      });
-  
-      // $(".port-img").mouseout(function(){
-      //   $(this).siblings().css("display", "none");
-      // });
-
-      
-      
     }
-
-    
-
-    // Image Resize like Flex: Portfolio
-    // var w = $(window).width();
-    // portslH = $(".port-img").height();
-    // portimH = portslH + 100;
-    // $(".port-slot").css({ height: height + "vw" });
     
   }
   
   // Piece Description Hover
   $(".port-img").mouseover(function(){
+      $(this).siblings().css("display", "initial");
       $(this).siblings().css("transform", "scaleX(1)");
       $(this).siblings().find(".desc-cont").css("z-index", "1");
   });
@@ -63,6 +49,23 @@ $("document").ready(function(){
       $(".desc-cont").css("transform", "scaleX(0)");
       $(".desc-cont").css("z-index", "1");
   });
+
+  $(".port-img").on("tap click", (function(){
+    console.log($(this).siblings().css("transform"));
+    if($(this).siblings().css("transform") == "matrix(0, 0, 0, 1, 0, 0)") {
+      $(this).siblings().css("display", "initial");
+      $(this).siblings().css("transform", "scaleX(1)");
+      $(this).siblings().find(".desc-cont").css("z-index", "1");
+      $(this).css("opacity", ".9");
+      $(this).css("background-image", "grey");
+    } else {
+      $(this).siblings().css("display", "initial");
+      $(this).siblings().css("transform", "scaleX(0)");
+      $(this).siblings().find(".desc-cont").css("z-index", "1");
+      $(this).css("opacity", "1");
+    }
+    
+}));
 
   window.onresize = resize;
   resize();
