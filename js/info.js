@@ -19,15 +19,15 @@ function init() {
   const far = 1000;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 7, 30);
+  camera.position.set(0, 20, 15);
  
       
     
   //Light setup
-  const ambient = new THREE.AmbientLight(0x404040, 2);
+  const ambient = new THREE.AmbientLight(0xffffff, 1);
   scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xffffff, 2);
+  const light = new THREE.DirectionalLight(0xffffff, 1);
   light.position.set(150, 150, 0);
   scene.add(light);
     
