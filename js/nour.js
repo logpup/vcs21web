@@ -13,8 +13,16 @@ $("document").ready(function(){
     var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: 6 + (user / doc) * 94 + "vw"})
+      $("#top-scroll").css({width: 6 + (user / doc) * 100 + "vw"})
     });
+
+    // Image to text-box margin manipulation
+    var imgH = $(".intro img").height();
+    var imgMargT = parseInt($(".intro img").css("margin-top").replace("px",""));
+    var textH = $(".state-side h4").height();
+    var textMargT = ((imgH - textH) / 2 + imgMargT).toString();
+    // var imgHtopM = $(".intro img").css("margin-top").replace("px","");
+    $(".state-side h4").css("margin-top", textMargT + "px");
 
     // Image Resize like Flex: Info Card
     var ppH = $(".pp-side").height();
@@ -92,7 +100,7 @@ function init() {
 
     
   //Light setup
-  const ambient = new THREE.AmbientLight(0x00ff00, 3);
+  const ambient = new THREE.AmbientLight(0x024441, 2);
   scene.add(ambient);
 
     

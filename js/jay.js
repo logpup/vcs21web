@@ -13,7 +13,7 @@ $("document").ready(function(){
     var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: 6 + (user / doc) * 94 + "vw"})
+      $("#top-scroll").css({width: 6 + (user / doc) * 115 + "vw"})
     });
 
     // Image to text-box margin manipulation
@@ -100,7 +100,7 @@ function init() {
 
     
   //Light setup
-  const ambient = new THREE.AmbientLight(0x5500ff, 3);
+  const ambient = new THREE.AmbientLight(0x713dff, 2);
   scene.add(ambient);
 
     
