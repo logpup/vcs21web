@@ -1,4 +1,3 @@
-//6ff2ab
 $("document").ready(function(){
   var user = $(document).scrollTop();
   var doc = $(document).height();
@@ -14,7 +13,7 @@ $("document").ready(function(){
     var height;
     $(window).scroll(function(){
       var user = $(document).scrollTop();
-      $("#top-scroll").css({width: 6 + (user / doc) * 94 + "vw"})
+      $("#top-scroll").css({width: 6 + (user / doc) * 100 + "vw"})
     });
 
     // Image to text-box margin manipulation
@@ -30,6 +29,8 @@ $("document").ready(function(){
     var ssH = $(".state-side h4").height();
     height = ssH + 100;
     $(".intro").css({ height: height + "px" });
+
+    
     
     if (w < 1000) {
       w = $(window).width();
@@ -99,7 +100,7 @@ function init() {
 
     
   //Light setup
-  const ambient = new THREE.AmbientLight(0x2d72bc, 3);
+  const ambient = new THREE.AmbientLight(0x2d72bc, 2);
   scene.add(ambient);
 
     
@@ -143,4 +144,3 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize);
-
