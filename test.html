@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+</head>
+<style>
+    @font-face {
+      font-family: Beatrice;
+      src: url("fonts/Beatrice-Semibold.otf") format("opentype");
+    }
+    @font-face {
+      font-family: Apercu-Light;
+      src: url("fonts/Apercu-Light.otf") format("opentype");
+    }
+    @font-face {
+      font-family: GT-Haptic-Light-Rotalic;
+      src: url("fonts/GT-Haptik-Light-Rotalic-Trial.otf") format("opentype");
+    }
+    /* div{
+          background: rgba(255, 255, 255, 0) !important;
+          border: none !important;
+      } */
+    body {
+      overflow-x: hidden;
+      clear: left;
+    }
+
+    #top-scroll{
+    position: fixed;
+    left: 0;
+    width:90vw;
+    height:.7vh;
+    z-index:1000;
+    }
+
+    .scene{
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: -500;
+    }
+
+    .scene,
+    canvas {
+        
+        width: 100%;
+        height: 100%;
+        
+        top: 0;
+    }
+  </style>
+<body>
+  <div id="top-scroll" style="position: fixed; top: 0; background: rgb(254, 78, 78);"></div>
+  <div
+    style="
+      position: relative;
+      width: 450px;
+      height: 10vh;
+      margin: 5vh auto 5vh auto;
+      border: 1px dotted black;
+    "
+  >
+    <div
+      style="
+        background: rgba(255, 255, 255, 0);
+        width: 100%;
+        height: 60px;
+        display: inline-block;
+      "
+    ></div>
+  </div>
+
+  <div
+    style="
+      padding: 30px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 150px;
+      height: 100px;
+      margin: 5vh auto 5vh auto;
+      border: 1px dotted black;
+      text-align: left;
+    "
+  >
+    <div
+      style="
+        background: magenta;
+        width: 100%;
+        height: 60px;
+        display: inline-block;
+      "
+    >
+      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto"
+        >Home</span
+      >
+    </div>
+  </div>
+
+  <div
+    style="
+      padding: 30px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 150px;
+      height: 100px;
+      margin: 5vh auto 5vh auto;
+      border: 1px dotted black;
+      text-align: right;
+    "
+  >
+    <div
+      style="
+        background: yellow;
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        font-size: 50px;
+      "
+    >
+      <span style="font-size: 30px; font-family: 'Beatrice'; margin: auto"
+        >Info</span
+      >
+    </div>
+  </div>
+
+  <div
+    style="
+      position: relative;
+      width: 450px;
+      height: 135px;
+      margin: 5vh auto 5vh auto;
+      border: 1px dotted black;
+      text-align: center;
+    "
+  >
+    <div
+      style="background: cyan; width: 100%; height: 40px; display: inline-block"
+    >
+      <span
+        style="display: inline-block; margin: 0 auto 0 auto; font-size: 50px"
+        >⤺</span
+      >
+    </div>
+    <div
+      style="
+        background: magenta;
+        width: 100%;
+        height: 55px;
+        display: inline-block;
+      "
+    >
+      <span style="font-size: 40px; font-family: 'Beatrice'; margin: auto"
+        >Mina Al Huqail</span
+      >
+    </div>
+    <div
+      style="
+        background: yellow;
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        font-size: 50px;
+      "
+    >
+      <span>⤻</span>
+    </div>
+  </div>
+  <script></script>
+  <style>
+    @media all and (max-width: 1000px) {
+      .intro {
+        /* height: calc(1 * 180vw) !important; */
+      }
+      .pp-side {
+        /* min-height: 130vw !important; */
+        width: 80vw !important;
+      }
+      .pp-side img {
+        width: 80vw !important;
+        margin-top: 20em;
+      }
+      .state-side {
+        /* min-height: 70vw !important; */
+        width: 80vw !important;
+        top: 121vw !important;
+      }
+
+      .state-side h4 {
+        margin-bottom: 0 !important;
+      }
+    }
+  </style>
+  <div
+    class="intro"
+    style="
+      position: relative;
+      width: 80vw;
+      margin: 5vh auto 5vh auto;
+      border: 1px dotted black;
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+      word-break: break-all;
+    "
+  >
+    <div
+      class="pp-side"
+      style="
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: cyan;
+        width: 47%;
+        display: flexbox;
+        text-align: center;
+        vertical-align: middle;
+      "
+    >
+      <img
+        style="margin: 18% auto 0 auto; width: 70%; display: flexbox"
+        src="images/profile-photo/pp-mina.jpeg"
+        alt=""
+      />
+    </div>
+    <div
+      class="state-side"
+      style="position: absolute; right: 0; background: magenta; width: 47%"
+    >
+      <h4 style="margin: 6vw auto 0 auto; font-family: Apercu-Light">
+        Juliet Nelson works with digital photography and traditional craft
+        mediums with emphasis on exemplifying environmental awareness and
+        sustainable consumption in both processes and objects. Nelson uses
+        digital microscopic photography of natural compounds to uncover patterns
+        and designs, finding relationships between the world we cannot see,
+        buried under the label waste, and the world we seek out through
+        aestheticism and consumption. Existing only digitally, these pieces are
+        the most accessible, and the most illusive. Without titles the
+        photographs could be anything, but that is the beauty of nature her
+        photographs evoke. Creating aesthetically appealing digital photographs
+        and documentation of her work, Nelson acknowledges the capital that
+        beauty has in today’s society. Using it to introduce her experience of
+        nature and ideas of reuse for any viewer participating in capitalism.
+        Her physical work uses paper making and sculpture to repurpose consumed
+        materials for the ecological installation “Relife”. <br /><br />
+        Five wine bottles, cotton clothing line, recycled paper, and Smallhold’s
+        blue oyster mushroom mycelium block creates an herbal ecosystem complete
+        with gnats, fruiting mushrooms, and growing herbs. In a similar process
+        Nelson used paper packaging and flowers from her family’s wholesale
+        flower farm to bring attention to the consumption of cut flowers. Energy
+        is used to grow flowers that only provide visual stimulation, until they
+        are thrown away and replaced; a cycle of death that contributes to
+        climate change while her family benefits. This source of contention for
+        her is why she acknowledges the necessary participation in capitalism,
+        but also the necessary understanding of its shortcomings and detriments.
+        Nelson’s work is one way to avoid a total destruction for the sake of
+        capitalism as she is pro ethical and sustainable consumption. It is
+        possible to make a greener world through art.
+      </h4>
+    </div>
+  </div>
+  <style>
+    @media all and (max-width: 1000px) {
+      .port-slot {
+        height: 80vw !important;
+      }
+
+      .port-img {
+        width: 100% !important;
+      }
+
+      .desc-cont .left {
+        position: absolute;
+        right: 0 !important;
+      }
+
+      /* .desc-cont .r {
+        left: 0 !important;
+      } */
+
+      .descript {
+        font-size: 3vw;
+      }
+    }
+    .descript {
+      font-family: "Apercu-Light";
+    }
+    .descript span {
+      font-family: "GT-Haptic-Light-Rotalic";
+    }
+
+  </style>
+<div
+  class="port-slot"
+  style="
+    position: relative;
+    width: 80vw;
+    min-height: 38.5vw;
+    margin: 15vh auto 15vh auto;
+    border: 1px dotted black;
+    display: flex;
+  "
+>
+  <div
+    class="port-img"
+    style="
+      position: absolute;
+      right: 0;
+      background: cyan;
+      width: 40%;
+      height: 100%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    "
+  >
+    <img style="width: 90%" src="images/gallery/julia/Cover.jpg" alt="" />
+  </div>
+  <div
+    class="desc-cont left"
+    style="
+      position: absolute;
+      top: 44%;
+      right: 45%;
+      background: yellow;
+      padding: 1%;
+      text-align: center;
+      font-size: 1.5vw;
+
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: 0.3s;
+      transform-style: preserve-3d;
+    "
+  >
+    <span class="descript">
+      <span>Where did you go?</span>
+      <br />Naomi Triestman <br /><em>March 2020</em>
+    </span>
+  </div>
+</div>
+<div
+    class="port-slot"
+    style="
+      position: relative;
+      width: 80vw;
+      min-height: 30vw;
+      margin: 5vh auto 10vh auto;
+      border: 1px dotted black;
+    "
+  >
+    <div
+      class="port-img"
+      style="
+        position: absolute;
+        left: 0;
+        background: cyan;
+        width: 40%;
+        height: 100%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+      "
+    >
+      <img
+        style="width: 90%"
+        src="images/gallery/julia/deadrats copy.png"
+        alt=""
+      />
+    </div>
+    <div
+      class="desc-cont right"
+      style="
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        background: yellow;
+        padding: 1%;
+        text-align: center;
+        font-size: 1.5vw;
+      "
+    >
+      <span class="descript l">
+        <span>Where did you go?</span>
+        <br />Naomi Triestman <br /><em>March 2020</em>
+      </span>
+    </div>
+</div>
+<div class="scene"></div>
+
+</body>
+<script src="js/mina.js"></script>
+</html>
