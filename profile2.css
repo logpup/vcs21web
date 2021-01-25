@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("assets/fonts/helvetica/helvetica-neue-medium.ttf") format("truetype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Helvetica Light";
+    src:  url("assets/fonts/helvetica/helvetica-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Cirka;
+    src: url("assets/fonts/Cirka-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url("assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url("assets/fonts/NeueMachina-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NeueWorld;
+    src: url("assets/fonts/NeueWorld-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Hatton;
+    src: url("assets/fonts/Hatton-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyReg;
+    src: url("assets/fonts/Supply-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SupplyLight;
+    src: url("assets/fonts/Supply-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FormulaCond;
+    src: url("assets/fonts/FormulaCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MajorMono;
+    src: url("assets/fonts/MajorMono-Regular.ttf") format("truetype");
+}
+
+.temp-gallery{
+    position: absolute;
+    top: 0;
+    right: 40vw;
+    width: 20%;
+}
+
+/* Left Div */
+.profile-menu-left{
+    width: 28vw;
+}
+
+.artistphoto-container{
+    height: 30%
+}
+
+.artistphoto{
+    width: 100%;
+}
+
+.artistinfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    
+    justify-content: center;
+}
+
+/* Artist Tables with Color */
+
+.nametable{
+    padding: 10vh 8vw 10vh 8vw;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+}
+
+td{
+    width: 33%;
+}
+
+td h1{
+  color: black;
+  font-family: "MajorMono";
+  font-size: 2vh;
+  line-height: 3vh;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin thin .6vh thin;
+  border-radius: 100px 100px 100px 100px;     
+  padding: 1vh 2vw 1vh 2vw;
+}
+
+.blankname{
+    border: 0px;
+    
+}
+
+/* Name Hover Color*/
+
+.nametable .name1 h1:hover{
+    background-color: red;
+    box-shadow: 0px 0px 80px rgba(250,0,0,1);
+    color: white;
+    z-index: 9999;
+}
+
+.nametable .name2 h1:hover{
+    background-color: darkorange;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(250,120,0,1);
+    z-index: 9999;
+}
+
+.nametable .name3 h1:hover{
+    background-color: goldenrod;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(100,110,0,1);
+}
+
+.nametable .name4 h1:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(0,250,0,1);
+}
+
+.nametable .name5 h1:hover{
+    background-color: darkblue;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(60,0,255,1);
+}
+
+.nametable .name6 h1:hover{
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(130,0,255,1);
+}
+
+.nametable .name7 h1:hover{
+    background-color: deeppink;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(220,0,255,1);
+}
+
+td h2{
+  color: black;
+  font-family: "SupplyReg";
+  font-size: 13px;
+  line-height: 18px;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin 5px thin thin;
+  border-radius: 20px 20px 20px 0px;
+  padding: 10px;
+  
+}
+
+td h3{
+  color: black;
+  font-family: "SupplyReg";
+  font-size: 13px;
+  line-height: 18px;    
+  letter-spacing: -.8px;
+  border: 1px solid black;
+  border-width: thin;
+  padding: 10px; 
+}
